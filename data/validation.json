@@ -22,7 +22,7 @@
     "every_refresh"
   ],
   "refresh_mode_checks": "Same-timestamp advancement, full cycle, stale cursor recovery, mode switches, Force Refresh, setup failure and payload size.",
-  "live_render_verified_version": "0.2.2",
+  "live_render_verified_version": "0.2.3",
   "live_validation_record": "data/live-validation.json",
   "titlebar_layout_validation": {
     "version": "0.2.3",
@@ -34,5 +34,13 @@
       "X",
       "X portrait"
     ]
+  },
+  "standard_titlebar_live_validation": {
+    "date": "2026-10-18",
+    "plugin_id": 510793,
+    "plate": "011",
+    "structure": "view > layout + title_bar",
+    "picture_mode": "every_refresh",
+    "screenshot": "previews/live-titlebar.jpg"
   }
 }
