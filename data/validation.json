@@ -1,5 +1,5 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "image_integrity_checks": 60,
   "rotation_and_payload_tests": 25,
   "layout_renders": 406,
@@ -23,5 +23,16 @@
   ],
   "refresh_mode_checks": "Same-timestamp advancement, full cycle, stale cursor recovery, mode switches, Force Refresh, setup failure and payload size.",
   "live_render_verified_version": "0.2.2",
-  "live_validation_record": "data/live-validation.json"
+  "live_validation_record": "data/live-validation.json",
+  "titlebar_layout_validation": {
+    "version": "0.2.3",
+    "renders": 46,
+    "clipped_layouts": 0,
+    "report": "previews/titlebar-layout-report.json",
+    "profiles": [
+      "OG",
+      "X",
+      "X portrait"
+    ]
+  }
 }

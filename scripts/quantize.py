@@ -1,9 +1,9 @@
 """Simulate panel palettes. These are local previews, not TRMNL cloud renders."""
-import json
+import json, os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 ROOT=Path(__file__).resolve().parents[1]
-report=json.loads((ROOT/'previews/layout-report.json').read_text())
+report=json.loads((ROOT/os.environ.get('RENDER_REPORT','previews/layout-report.json')).read_text())
 for row in report:
  src=Image.open(ROOT/f"previews/{row['filename']}-raw.png").convert('L')
  if row['bits']==1:
@@ -14,6 +14,8 @@ for row in report:
  else:out=src.point(lambda v:round(v/17)*17)
  dest=ROOT/f"previews/{row['filename']}.png";tmp=dest.with_suffix('.tmp.png')
  out.save(tmp,compress_level=3);tmp.replace(dest)
+if os.environ.get('QUANTIZE_CONTACT_SHEETS')=='0':
+ print(f'Quantized {len(report)} renders.');raise SystemExit(0)
 font_path='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 try:font=ImageFont.truetype(font_path,20);small=ImageFont.truetype(font_path,15)
 except OSError:font=small=ImageFont.load_default()

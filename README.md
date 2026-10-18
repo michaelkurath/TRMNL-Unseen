@@ -1,6 +1,6 @@
 # Unseen — a hidden world, every day
 
-Version 0.2.2 · sync repair and naming · 18 October 2026
+Version 0.2.3 · standard title bar · 18 October 2026
 
 Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. Daily mode (the default) keeps one plate per local calendar day, with no repetition for 60 days. Every refresh mode advances through the collection each time the plugin refreshes, then loops after all 60 plates.
 
@@ -8,7 +8,7 @@ Sixty real scanning electron micrographs: familiar materials, natural structures
 
 Open `previews/index.html` for the image gallery. The collection is also available in six comparison sheets, `previews/collection-01-10.png` through `previews/collection-51-60.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
 
-All four layouts are included. OG full view uses a narrow caption panel beside the photograph; X full view uses a caption below it. The complete field of view is retained, including original scale bars. In portrait and narrow mashups, letterboxing is deliberate. Original capture magnification is labelled as capture magnification; it is not the magnification of the resized display image.
+All four layouts use the standard TRMNL `title_bar`, as a direct sibling after the `layout`. It shows Unseen and the plate number, with no custom title-bar CSS. Photo credit and licence remain in a separate attribution line, including when captions are off. All four layouts are included. OG full view uses a narrow caption panel beside the photograph; X full view uses a caption below it. The complete field of view is retained, including original scale bars. In portrait and narrow mashups, letterboxing is deliberate. Original capture magnification is labelled as capture magnification; it is not the magnification of the resized display image.
 
 ## Install on TRMNL
 

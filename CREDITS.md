@@ -485,4 +485,4 @@ Prepared PNGs preserve the full microscope field of view and scale bars. They ar
 - Magnification: Not stated; no value inferred. File-label magnifications describe the original capture; resizing changes displayed magnification.
 
 
-TRMNL Framework assets are from https://trmnl.com/css/latest/plugins.css and https://trmnl.com/js/latest/plugins.js, retrieved 2026-10-17. Framework source: https://github.com/usetrmnl/trmnl-framework (MIT); see vendor/LICENSE-TRMNL.txt. Inter font: The Inter Project Authors (SIL OFL 1.1); see vendor/fonts/OFL-Inter.txt. The snapshot is included for reproducible visual previews.
+TRMNL Framework assets are from https://trmnl.com/css/latest/plugins.css and https://trmnl.com/js/latest/plugins.js, retrieved 2026-10-17. Framework source: https://github.com/usetrmnl/trmnl-framework (MIT); see vendor/LICENSE-TRMNL.txt. Inter font: The Inter Project Authors (SIL OFL 1.1); see vendor/fonts/OFL-Inter.txt. TRMNL16: Heavyweight Digital Type Foundry (SIL OFL 1.1); see vendor/fonts/OFL-TRMNL16.txt. The snapshot is included for reproducible visual previews.

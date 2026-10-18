@@ -8,12 +8,12 @@ compact=[{k:e[k] for k in ('id','title','theme','magnification','credit','licens
 template=(ROOT/'scripts/transform.template.js').read_text()
 (ROOT/'src/transform.js').write_text(template.replace('__CATALOGUE__',json.dumps(compact,ensure_ascii=False,separators=(',',':'))))
 for layout in ('full','half_horizontal','half_vertical','quadrant'):
- (ROOT/f'src/{layout}.liquid').write_text('<div class="layout unseen-layout">{{ unseen_exhibit }}</div>\n')
+ (ROOT/f'src/{layout}.liquid').write_text('<div class="layout unseen-layout">{{ unseen_exhibit }}</div>\n{{ unseen_titlebar }}\n')
 (ROOT/'data/ping.json').write_text(json.dumps({'collection':'Unseen','version':catalogue['version']},separators=(',',':'))+'\n')
 credits=['# Unseen image credits\n',f'{len(entries)} scanning electron micrographs. Each plate retains its individual author and licence below.\n','Prepared PNGs preserve the full microscope field of view and scale bars. They are grayscale conversions, without generated or reconstructed image content. Preview derivatives are resized and dithered. Image derivatives retain the source licence listed for each plate.\n']
 for e in entries:
  credits += [f"## {e['title']}\n",f"- Source: {e['source_page']}\n- Author: {e['credit']}\n- Licence: {e['license']} — {e['license_url']}\n- Changes: {e['changes']}\n- Magnification: {e['magnification'] or 'Not stated; no value inferred'}. File-label magnifications describe the original capture; resizing changes displayed magnification.\n"]
-credits += ['\nTRMNL Framework assets are from https://trmnl.com/css/latest/plugins.css and https://trmnl.com/js/latest/plugins.js, retrieved 2026-10-17. Framework source: https://github.com/usetrmnl/trmnl-framework (MIT); see vendor/LICENSE-TRMNL.txt. Inter font: The Inter Project Authors (SIL OFL 1.1); see vendor/fonts/OFL-Inter.txt. The snapshot is included for reproducible visual previews.\n']
+credits += ['\nTRMNL Framework assets are from https://trmnl.com/css/latest/plugins.css and https://trmnl.com/js/latest/plugins.js, retrieved 2026-10-17. Framework source: https://github.com/usetrmnl/trmnl-framework (MIT); see vendor/LICENSE-TRMNL.txt. Inter font: The Inter Project Authors (SIL OFL 1.1); see vendor/fonts/OFL-Inter.txt. TRMNL16: Heavyweight Digital Type Foundry (SIL OFL 1.1); see vendor/fonts/OFL-TRMNL16.txt. The snapshot is included for reproducible visual previews.\n']
 (ROOT/'CREDITS.md').write_text('\n'.join(credits))
 options=''.join(f'<option value="{html.escape(e["id"])}">{n+1:03d} · {html.escape(e["title"])}</option>' for n,e in enumerate(entries))
 sheets=' · '.join(f'<a href="collection-{n+1:02d}-{min(n+10,len(entries)):02d}.png">Plates {n+1}–{min(n+10,len(entries))}</a>' for n in range(0,len(entries),10))

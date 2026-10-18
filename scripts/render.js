@@ -37,11 +37,14 @@ async function main(){
    await page.setContent(html,{waitUntil:'load'});
    await page.evaluate(()=>document.fonts.ready);
    await page.evaluate(()=>Promise.all(Array.from(document.images).map(im=>im.decode())));
+   if(p.id==='og'&&!await page.evaluate(()=>Array.from(document.fonts).some(font=>font.family==='TRMNL16'&&font.status==='loaded')))throw new Error('TRMNL16 title-bar font did not load');
    const measurement=await page.evaluate(()=>{
     const v=document.querySelector('.view').getBoundingClientRect();
-    const elements=Array.from(document.querySelectorAll('.unseen__caption,.unseen__credit,.unseen__subject,.unseen__rights,.unseen__setup'));
+    const elements=Array.from(document.querySelectorAll('.unseen__caption,.unseen__credit,.unseen__subject,.unseen__rights,.unseen__setup,.title_bar,.title_bar .title,.title_bar .instance'));
     const clipped=elements.filter(el=>{const r=el.getBoundingClientRect();return r.width&&r.height&&(r.left<v.left-1||r.right>v.right+1||r.top<v.top-1||r.bottom>v.bottom+1||el.scrollWidth>el.clientWidth+1||el.scrollHeight>el.clientHeight+1)}).map(el=>el.className);
     const box=document.querySelector('.unseen__image')?.getBoundingClientRect();
+    const titleBar=document.querySelector('.view > .title_bar');
+    if(!titleBar||titleBar.previousElementSibling?.classList.contains('layout')!==true)clipped.push('title_bar must follow layout as a direct view child');
     return {width:v.width,height:v.height,clipped,imageBox:box?{x:box.x-v.x,y:box.y-v.y,width:box.width,height:box.height}:null,font:document.fonts.status};
    });
    const filename=`${p.id}-${layout}-${j.setup?'setup':data.selected_entry.id}${caption==='no'?'-image-only':''}`;
@@ -51,7 +54,7 @@ async function main(){
    if(report.length%20===0)console.log(`Rendered ${report.length}/${filteredJobs.length}`);
   }
  }finally{await browser.close();server.close();}
- const reportPath=path.join(ROOT,'previews/layout-report.json');
+ const reportPath=path.join(ROOT,process.env.RENDER_REPORT||'previews/layout-report.json');
  let combined=report;
  if((profileFilter||layoutFilter||subjectFilter)&&fs.existsSync(reportPath)){
   const replaced=new Set(report.map(r=>r.filename));

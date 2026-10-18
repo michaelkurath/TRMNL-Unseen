@@ -10,7 +10,6 @@
 .unseen__method{font-size:13px;line-height:1.3;margin-top:4px}
 .unseen__credit{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 14px;border-top:1px solid #000;font-size:11px;line-height:1.2}
 .unseen__credit a{color:inherit;text-decoration:none}
-.unseen__brand{font-weight:800;letter-spacing:2px;white-space:nowrap}
 .unseen__rights{min-width:0;font-size:10px;text-align:right;overflow-wrap:anywhere}
 .view--half_horizontal .unseen__caption,.view--quadrant .unseen__caption{padding:5px 10px}
 .view--half_horizontal .unseen__subject,.view--quadrant .unseen__subject{font-size:18px}
@@ -19,7 +18,6 @@
 .view--half_vertical .unseen__subject{font-size:22px}
 .view--half_vertical .unseen__subject-row{align-items:flex-start;flex-direction:column;gap:4px}
 .view--quadrant .unseen__rights,.view--half_vertical .unseen__rights{font-size:9px}
-.view--quadrant .unseen__brand{font-size:10px;letter-spacing:1px}
 .screen--lg .unseen__caption{padding:14px 20px 12px}
 .screen--lg .unseen__subject{font-size:30px}
 .screen--lg .unseen__magnification{font-size:20px}
@@ -46,7 +44,13 @@
     <div class="unseen__subject-row"><span class="unseen__subject">{{ selected_entry.title | escape }}</span>{% if selected_entry.magnification != blank %}<span class="unseen__magnification">{{ selected_entry.magnification | escape }} capture</span>{% endif %}</div>
     <div class="unseen__method">Scanning electron micrograph</div><div class="unseen__method">Plate {{ plate_number }} · {{ display_date }}</div>
   </figcaption>{% endif %}
-  <div class="unseen__credit"><span class="unseen__brand">Unseen</span><span class="unseen__rights"><a href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
+  <div class="unseen__credit"><span class="unseen__rights"><a href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
 </figure>
 {% endif %}
+{% endcapture %}
+{% capture unseen_titlebar %}
+<div class="title_bar">
+  <span class="title">Unseen</span>
+  {% unless setup_required %}<span class="instance">Plate {{ plate_number }}</span>{% endunless %}
+</div>
 {% endcapture %}

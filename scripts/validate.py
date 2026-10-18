@@ -39,6 +39,8 @@ expected = (ROOT / 'scripts/transform.template.js').read_text().replace('__CATAL
 assert (ROOT / 'src/transform.js').read_text() == expected, 'Run python scripts/build.py'
 for layout in ('full','half_horizontal','half_vertical','quadrant'):
     assert '{{ unseen_exhibit }}' in (ROOT / f'src/{layout}.liquid').read_text()
+    assert '{{ unseen_titlebar }}' in (ROOT / f'src/{layout}.liquid').read_text()
+assert '<div class="title_bar">' in (ROOT / 'src/shared.liquid').read_text()
 assert 'image-dither' in (ROOT / 'src/shared.liquid').read_text()
 assert len(json.loads((ROOT / 'data/ping.json').read_text())) > 0
 print(f'PASS: {len(catalogue)} PNGs, image hashes, source/credit records, generated transform and four layouts.')
