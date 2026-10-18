@@ -18,21 +18,13 @@ custom_fields:
   field_type: author_bio
   name: About UNSEEN
   github_url: https://github.com/michaelkurath/TRMNL-Unseen
-  description: 60 real micrographs, changing daily or on every refresh. MUSE and University of Tartu contributors; individual CC BY and CC BY-SA credits appear on every plate.
+  description: 60 real micrographs, one per local calendar day. MUSE and University of Tartu contributors; individual CC BY and CC BY-SA credits appear on every plate.
 - keyname: assets_base_url
   field_type: string
   name: Public collection URL
   description: Public image source. The default uses this plugin's GitHub repository; no separate hosting account is required.
   default: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
   placeholder: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
-- keyname: picture_mode
-  field_type: select
-  name: Picture change mode
-  description: Daily keeps the same picture for the local calendar day. Every refresh advances to the next picture on each scheduled plugin refresh or Force Refresh.
-  options:
-  - Daily: daily
-  - Every refresh: every_refresh
-  default: daily
 - keyname: show_caption
   field_type: select
   name: Show subject caption
