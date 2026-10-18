@@ -6,7 +6,7 @@
   "clipped_layouts": 0,
   "palette_and_geometry_checks": 406,
   "trmnlp_executed": false,
-  "authenticated_trmnl_render_executed": false,
+  "authenticated_trmnl_render_executed": true,
   "live_render_owner_confirmation": {
     "version": "0.1.0",
     "date": "2026-10-18",
@@ -21,5 +21,7 @@
     "daily",
     "every_refresh"
   ],
-  "refresh_mode_checks": "Same-timestamp advancement, full cycle, stale cursor recovery, mode switches, Force Refresh, setup failure and payload size."
+  "refresh_mode_checks": "Same-timestamp advancement, full cycle, stale cursor recovery, mode switches, Force Refresh, setup failure and payload size.",
+  "live_render_verified_version": "0.2.2",
+  "live_validation_record": "data/live-validation.json"
 }

@@ -12,7 +12,7 @@ All four layouts are included. OG full view uses a narrow caption panel beside t
 
 ## Install on TRMNL
 
-This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. The owner confirmed the v0.1.0 live TRMNL rendering works on 18 October 2026. The expanded v0.2.0 collection has local layout and image checks; its live rendering still needs a refresh after GitHub sync. The public recipe has not been published.
+This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. The owner confirmed the v0.1.0 live TRMNL rendering works on 18 October 2026. Version 0.2.2 was verified directly in the authenticated TRMNL web UI: Every refresh advanced from Micrometeorite (003) to A sheet of paper (004), with the Unseen name visible. See `data/live-validation.json` and `previews/live-refresh-003.jpg` / `previews/live-refresh-004.jpg`. The public recipe has not been published.
 
 1. The public images are included in this repository. Use `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main` as the Public collection URL. No separate hosting account or GitHub Pages setup is required.
 2. Open the existing Unseen Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
@@ -31,7 +31,7 @@ Choose **Picture change mode** in plugin settings:
 
 TRMNL Saved State remembers the last plate, including across Force Refresh. Switching from Daily to Every refresh advances from the last displayed daily plate; switching back restores the calendar selection. A fresh install or cleared/obsolete saved cursor starts on the current daily plate. Invalid image-host settings do not advance the cursor. State uses a single plate ID, without storing the collection or image data. See [TRMNL Saved State](https://help.trmnl.com/en/articles/16777795-saved-state).
 
-Import the latest GitHub changes into TRMNL **before saving the plugin settings**. Saving the older live plugin first exports its old source back to GitHub and can remove the new field and Serverless logic. The GitHub link alone is not an import; use the pending-changes import control on the Private Plugins list. After importing, select **Every refresh**, save, then Force Refresh twice to verify two different plates.
+Import the latest GitHub changes into TRMNL **before saving the plugin settings**. Saving the older live plugin first exports its old source back to GitHub and can remove the new field and Serverless logic. The GitHub link alone is not an import; on this plugin's settings page, use **GitHub-Synchronisierung → Von GitHub importieren** (Import from GitHub). After importing, select **Every refresh**, save, then Force Refresh twice to verify two different plates.
 
 ## Reproduce the checks
 
@@ -63,4 +63,4 @@ Photographs and prepared derivatives use CC BY-SA 3.0, CC BY-SA 4.0 or CC BY 4.0
 
 ## Next release gate
 
-Sync the expanded collection from GitHub and Force Refresh. Check representative new plates in the live full and mashup previews before public release. The existing live integration is confirmed by the owner; the expanded catalogue repeats after 60 days.
+Live Every refresh advancement and the Unseen name were verified on TRMNL X full-screen preview on 18 October 2026. Check the remaining live mashup/OG views before public release; the earlier 406 local geometry/palette checks remain available. Daily mode repeats after 60 days; Every refresh repeats after 60 successful plugin refreshes.

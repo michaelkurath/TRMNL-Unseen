@@ -1,0 +1,25 @@
+{
+  "version": "0.2.2",
+  "date": "2026-10-18",
+  "plugin_id": 510793,
+  "plugin_name": "Unseen",
+  "picture_mode": "every_refresh",
+  "verification": "Authenticated TRMNL web UI; imported GitHub changes before saving settings; confirmed Force Refresh dialogs and inspected resulting live markup previews.",
+  "sequence": [
+    {
+      "plate": "003",
+      "id": "micrometeorite",
+      "title": "Micrometeorite",
+      "screenshot": "previews/live-refresh-003.jpg"
+    },
+    {
+      "plate": "004",
+      "id": "paper",
+      "title": "A sheet of paper",
+      "screenshot": "previews/live-refresh-004.jpg"
+    }
+  ],
+  "physical_device_observed": false,
+  "cause_of_previous_failure": "The older live plugin was saved back to GitHub before the newer source was imported, restoring daily-only settings and transform.",
+  "resolution": "Restored the mode and transform, imported GitHub changes into the connected plugin, and saved Every refresh. Plugin name and on-screen label are Unseen."
+}
