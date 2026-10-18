@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "image_integrity_checks": 60,
   "rotation_and_payload_tests": 25,
   "layout_renders": 406,

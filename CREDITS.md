@@ -1,4 +1,4 @@
-# UNSEEN image credits
+# Unseen image credits
 
 60 scanning electron micrographs. Each plate retains its individual author and licence below.
 

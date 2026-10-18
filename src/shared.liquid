@@ -38,7 +38,7 @@
 </style>
 {% capture unseen_exhibit %}
 {% if setup_required %}
-  <div class="unseen"><div class="unseen__setup"><span class="title">UNSEEN</span><span class="description">Add the public collection URL in plugin settings to load today's micrograph.</span></div></div>
+  <div class="unseen"><div class="unseen__setup"><span class="title">Unseen</span><span class="description">Add the public collection URL in plugin settings to load today's micrograph.</span></div></div>
 {% else %}
 <figure class="unseen">
   <div class="unseen__image"><img class="image image-dither" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph"></div>
@@ -46,7 +46,7 @@
     <div class="unseen__subject-row"><span class="unseen__subject">{{ selected_entry.title | escape }}</span>{% if selected_entry.magnification != blank %}<span class="unseen__magnification">{{ selected_entry.magnification | escape }} capture</span>{% endif %}</div>
     <div class="unseen__method">Scanning electron micrograph</div><div class="unseen__method">Plate {{ plate_number }} · {{ display_date }}</div>
   </figcaption>{% endif %}
-  <div class="unseen__credit"><span class="unseen__brand">UNSEEN</span><span class="unseen__rights"><a href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
+  <div class="unseen__credit"><span class="unseen__brand">Unseen</span><span class="unseen__rights"><a href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
 </figure>
 {% endif %}
 {% endcapture %}

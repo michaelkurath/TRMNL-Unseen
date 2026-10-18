@@ -1,6 +1,6 @@
-# UNSEEN — a hidden world, every day
+# Unseen — a hidden world, every day
 
-Version 0.2.1 · picture change modes · 18 October 2026
+Version 0.2.2 · sync repair and naming · 18 October 2026
 
 Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. Daily mode (the default) keeps one plate per local calendar day, with no repetition for 60 days. Every refresh mode advances through the collection each time the plugin refreshes, then loops after all 60 plates.
 
@@ -15,7 +15,7 @@ All four layouts are included. OG full view uses a narrow caption panel beside t
 This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. The owner confirmed the v0.1.0 live TRMNL rendering works on 18 October 2026. The expanded v0.2.0 collection has local layout and image checks; its live rendering still needs a refresh after GitHub sync. The public recipe has not been published.
 
 1. The public images are included in this repository. Use `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main` as the Public collection URL. No separate hosting account or GitHub Pages setup is required.
-2. Open the existing UNSEEN Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
+2. Open the existing Unseen Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
 3. Add the custom fields from `src/settings.yml`. Keep the default Public collection URL above, or set your own HTTPS mirror without a trailing slash.
 4. Paste `src/transform.js` into the Serverless tab, choosing Node. Paste `src/shared.liquid` into Shared and each remaining `.liquid` file into its corresponding layout tab. Enable Remove Bleed Margin.
 5. Force Refresh and verify the four layouts on your account. Review the licence credits and outbound image requests before public release.
@@ -31,7 +31,7 @@ Choose **Picture change mode** in plugin settings:
 
 TRMNL Saved State remembers the last plate, including across Force Refresh. Switching from Daily to Every refresh advances from the last displayed daily plate; switching back restores the calendar selection. A fresh install or cleared/obsolete saved cursor starts on the current daily plate. Invalid image-host settings do not advance the cursor. State uses a single plate ID, without storing the collection or image data. See [TRMNL Saved State](https://help.trmnl.com/en/articles/16777795-saved-state).
 
-After syncing this update from GitHub, select **Every refresh**, save, then Force Refresh twice to verify two different plates.
+Import the latest GitHub changes into TRMNL **before saving the plugin settings**. Saving the older live plugin first exports its old source back to GitHub and can remove the new field and Serverless logic. The GitHub link alone is not an import; use the pending-changes import control on the Private Plugins list. After importing, select **Every refresh**, save, then Force Refresh twice to verify two different plates.
 
 ## Reproduce the checks
 
