@@ -1,0 +1,7 @@
+node_modules/
+assets/source/
+previews/*-raw.png
+previews/*.tmp.png
+__pycache__/
+*.pyc
+_site/

@@ -1,0 +1,52 @@
+<style>
+.layout.unseen-layout{padding:0;display:block;min-height:0}
+.unseen{display:flex;flex-direction:column;width:100%;height:100%;min-height:0;margin:0;overflow:hidden;background:#fff;color:#000;font-family:"Inter Variable",Arial,sans-serif}
+.unseen__image{flex:1;min-height:0;position:relative;overflow:hidden;background:#000}
+.unseen__image img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:contain}
+.unseen__caption{flex:none;padding:10px 14px 8px;border-top:2px solid #000}
+.unseen__subject-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.unseen__subject{font-size:24px;line-height:1.1;font-weight:700;min-width:0}
+.unseen__magnification{font-size:16px;line-height:1.2;white-space:nowrap}
+.unseen__method{font-size:13px;line-height:1.3;margin-top:4px}
+.unseen__credit{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 14px;border-top:1px solid #000;font-size:11px;line-height:1.2}
+.unseen__credit a{color:inherit;text-decoration:none}
+.unseen__brand{font-weight:800;letter-spacing:2px;white-space:nowrap}
+.unseen__rights{font-size:10px;text-align:right}
+.view--half_horizontal .unseen__caption,.view--quadrant .unseen__caption{padding:5px 10px}
+.view--half_horizontal .unseen__subject,.view--quadrant .unseen__subject{font-size:18px}
+.view--half_horizontal .unseen__method,.view--quadrant .unseen__method{display:none}
+.view--half_horizontal .unseen__credit,.view--quadrant .unseen__credit{padding:4px 10px}
+.view--half_vertical .unseen__subject{font-size:22px}
+.view--half_vertical .unseen__subject-row{align-items:flex-start;flex-direction:column;gap:4px}
+.view--quadrant .unseen__rights,.view--half_vertical .unseen__rights{font-size:9px}
+.view--quadrant .unseen__brand{font-size:10px;letter-spacing:1px}
+.screen--lg .unseen__caption{padding:14px 20px 12px}
+.screen--lg .unseen__subject{font-size:30px}
+.screen--lg .unseen__magnification{font-size:20px}
+.screen--lg .unseen__method{font-size:16px;margin-top:6px}
+.screen--lg .unseen__credit{padding:8px 20px;font-size:14px}
+.screen--lg .unseen__rights{font-size:12px}
+.unseen__setup{padding:24px;display:flex;flex-direction:column;justify-content:center;height:100%;gap:12px}
+.screen--md .view--full .unseen:has(.unseen__caption){display:grid;grid-template-columns:minmax(0,1fr) 190px;grid-template-rows:minmax(0,1fr) auto}
+.screen--md .view--full .unseen:has(.unseen__caption) .unseen__image{grid-column:1;grid-row:1 / 3}
+.screen--md .view--full .unseen__caption{grid-column:2;grid-row:1;border-top:0;border-left:1px solid #000;padding:18px 14px;display:flex;flex-direction:column;justify-content:center}
+.screen--md .view--full .unseen__subject-row{flex-direction:column;align-items:flex-start;gap:12px}
+.screen--md .view--full .unseen__subject{font-size:20px;overflow-wrap:anywhere}
+.screen--md .view--full .unseen__method{margin-top:14px}
+.screen--md .view--full .unseen__credit{grid-column:2;grid-row:2;border-left:1px solid #000;flex-direction:column;align-items:flex-start;gap:8px;padding:14px}
+.screen--md .view--full .unseen__rights{text-align:left;line-height:1.4}
+</style>
+{% capture unseen_exhibit %}
+{% if setup_required %}
+  <div class="unseen"><div class="unseen__setup"><span class="title">UNSEEN</span><span class="description">Add the public collection URL in plugin settings to load today's micrograph.</span></div></div>
+{% else %}
+<figure class="unseen">
+  <div class="unseen__image"><img class="image image-dither" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph"></div>
+  {% if show_caption %}<figcaption class="unseen__caption">
+    <div class="unseen__subject-row"><span class="unseen__subject">{{ selected_entry.title | escape }}</span>{% if selected_entry.magnification != blank %}<span class="unseen__magnification">{{ selected_entry.magnification | escape }} capture</span>{% endif %}</div>
+    <div class="unseen__method">Scanning electron micrograph</div><div class="unseen__method">Plate {{ plate_number }} · {{ display_date }}</div>
+  </figcaption>{% endif %}
+  <div class="unseen__credit"><span class="unseen__brand">UNSEEN</span><span class="unseen__rights"><a href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
+</figure>
+{% endif %}
+{% endcapture %}

@@ -12,10 +12,10 @@ All four layouts are included. OG full view uses a narrow caption panel beside t
 
 ## Install on TRMNL
 
-This package is not connected to a TRMNL account and has not been installed or published as a recipe.
+This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. A live account/device render has not yet been verified; the public recipe has not been published.
 
 1. The public images are included in this repository. Use `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main` as the Public collection URL. No separate hosting account or GitHub Pages setup is required.
-2. Create a Private Plugin called UNSEEN, using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
+2. Open the existing UNSEEN Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
 3. Add the custom fields from `src/settings.yml`. Keep the default Public collection URL above, or set your own HTTPS mirror without a trailing slash.
 4. Paste `src/transform.js` into the Serverless tab, choosing Node. Paste `src/shared.liquid` into Shared and each remaining `.liquid` file into its corresponding layout tab. Enable Remove Bleed Margin.
 5. Force Refresh and verify the four layouts on your account. Review the licence credits and outbound image requests before public release.

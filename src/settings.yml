@@ -1,18 +1,41 @@
 ---
+name: UNSEEN
+description: A hidden world, every day
 strategy: polling
-no_screen_padding: 'no'
+polling_url: '{{ assets_base_url }}/data/ping.json'
+polling_verb: get
+refresh_interval: 60
+no_screen_padding: 'yes'
+framework_version: 3.4.3
+custom_fields:
+- keyname: author_info
+  field_type: author_bio
+  name: About UNSEEN
+  github_url: https://github.com/michaelkurath/TRMNL-Unseen
+  description: Real museum micrographs, one per local calendar day. Prototype collection
+    of ten subjects. Photographs by Nicola Angeli / MUSE, CC BY-SA 3.0; prepared images
+    retain that licence.
+- keyname: assets_base_url
+  field_type: string
+  name: Public collection URL
+  description: Public image source. The default uses this plugin's GitHub repository;
+    no separate hosting account is required.
+  default: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
+  placeholder: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
+- keyname: show_caption
+  field_type: select
+  name: Show subject caption
+  description: Image credit remains visible in both modes.
+  options:
+  - 'Yes': 'yes'
+  - 'No': 'no'
+  default: 'yes'
+id: 510793
 dark_mode: 'no'
 static_data: ''
-polling_verb: get
-framework_version: 3.4.3
-serverless_language: ''
-refresh_interval_floor: ''
-polling_url: ''
 polling_headers: ''
 polling_body: ''
-id: 510793
 oauth_enabled: 'false'
 oauth_pkce_enabled: 'no'
-name: Unseen
-description: ''
-refresh_interval: 15
+refresh_interval_floor: ''
+serverless_language: node

@@ -1,0 +1,5 @@
+vendor/** -whitespace linguist-vendored
+previews/** linguist-generated
+*.png binary
+*.ttf binary
+*.woff2 binary

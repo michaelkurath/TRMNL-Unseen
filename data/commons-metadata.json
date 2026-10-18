@@ -1,0 +1,1027 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "48293205": {
+        "pageid": 48293205,
+        "ns": 6,
+        "title": "File:Butterfly wings 5000x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147932,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Butterfly_wings_5000x_-_SEM_MUSE.tif/lossy-page1-1920px-Butterfly_wings_5000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Butterfly_wings_5000x_-_SEM_MUSE.tif/lossy-page1-1920px-Butterfly_wings_5000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Butterfly_wings_5000x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Butterfly_wings_5000x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48293205",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 07:51:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Butterfly wings 5000x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Scanning electron microscopic images of Lepidoptera|Microscopic images of Lepidoptera wings|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Ali di farfalla al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48298212": {
+        "pageid": 48298212,
+        "ns": 6,
+        "title": "File:Copper crystal - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 7080090,
+            "width": 3072,
+            "height": 2304,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Copper_crystal_-_SEM_MUSE.tif/lossy-page1-1920px-Copper_crystal_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Copper_crystal_-_SEM_MUSE.tif/lossy-page1-1920px-Copper_crystal_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Copper_crystal_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Copper_crystal_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48298212",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 15:24:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Copper crystal - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Microscopic images of copper|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Cristallo_di_rame al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48378568": {
+        "pageid": 48378568,
+        "ns": 6,
+        "title": "File:Cork 100x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147972,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Cork_100x_-_SEM_MUSE.tif/lossy-page1-1920px-Cork_100x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Cork_100x_-_SEM_MUSE.tif/lossy-page1-1920px-Cork_100x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Cork_100x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cork_100x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48378568",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-26 07:58:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cork 100x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Cork (material)|Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sughero al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48378097": {
+        "pageid": 48378097,
+        "ns": 6,
+        "title": "File:Fern sporangia 250x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147972,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Fern_sporangia_250x_-_SEM_MUSE.tif/lossy-page1-1920px-Fern_sporangia_250x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Fern_sporangia_250x_-_SEM_MUSE.tif/lossy-page1-1920px-Fern_sporangia_250x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Fern_sporangia_250x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fern_sporangia_250x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48378097",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-26 07:04:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Fern sporangia 250x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Sporangium|Items with VRTS permission confirmed|Unknown date|Unidentified Pteridophyta|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sporangi di felce al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48293053": {
+        "pageid": 48293053,
+        "ns": 6,
+        "title": "File:Human hair 2000X - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147932,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Human_hair_2000X_-_SEM_MUSE.tif/lossy-page1-1920px-Human_hair_2000X_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Human_hair_2000X_-_SEM_MUSE.tif/lossy-page1-1920px-Human_hair_2000X_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Human_hair_2000X_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_hair_2000X_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48293053",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 07:39:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human hair 2000X - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Microscopic images of human hair|Scanning electron microscopic images of mammal hair fibres|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Capello umano al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48298417": {
+        "pageid": 48298417,
+        "ns": 6,
+        "title": "File:Micrometeorite 1000x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 787130,
+            "width": 1024,
+            "height": 768,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Micrometeorite_1000x_-_SEM_MUSE.tif/lossy-page1-960px-Micrometeorite_1000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Micrometeorite_1000x_-_SEM_MUSE.tif/lossy-page1-960px-Micrometeorite_1000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Micrometeorite_1000x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Micrometeorite_1000x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48298417",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 15:40:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Micrometeorite 1000x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|Micrometeorites|With trademark|Items with VRTS permission confirmed|Unknown date|Microscopic images of meteorites|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Micrometeorite al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48293955": {
+        "pageid": 48293955,
+        "ns": 6,
+        "title": "File:Paper sheet 500x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147930,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Paper_sheet_500x_-_SEM_MUSE.tif/lossy-page1-1920px-Paper_sheet_500x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Paper_sheet_500x_-_SEM_MUSE.tif/lossy-page1-1920px-Paper_sheet_500x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Paper_sheet_500x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Paper_sheet_500x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48293955",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 09:00:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Paper sheet 500x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Paper sheets|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Un foglio di carta al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48378444": {
+        "pageid": 48378444,
+        "ns": 6,
+        "title": "File:Pollen 1000x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147932,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Pollen_1000x_-_SEM_MUSE.tif/lossy-page1-1920px-Pollen_1000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Pollen_1000x_-_SEM_MUSE.tif/lossy-page1-1920px-Pollen_1000x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Pollen_1000x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Pollen_1000x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48378444",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-26 07:46:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Pollen 1000x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Scanning electron microscopic images of pollen|Microscopic images of unidentified pollen|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Polline al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48297919": {
+        "pageid": 48297919,
+        "ns": 6,
+        "title": "File:Velcro - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147972,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Velcro_-_SEM_MUSE.tif/lossy-page1-1920px-Velcro_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Velcro_-_SEM_MUSE.tif/lossy-page1-1920px-Velcro_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Velcro_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Velcro_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48297919",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 15:03:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Velcro - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Details of hook-and-loop fasteners|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Velcro al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48293801": {
+        "pageid": 48293801,
+        "ns": 6,
+        "title": "File:Women nylon stockings 500x - SEM MUSE.tif",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3147972,
+            "width": 2048,
+            "height": 1536,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Women_nylon_stockings_500x_-_SEM_MUSE.tif/lossy-page1-1920px-Women_nylon_stockings_500x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1920,
+            "thumbheight": 1440,
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Women_nylon_stockings_500x_-_SEM_MUSE.tif/lossy-page1-1920px-Women_nylon_stockings_500x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1920,
+              "height": 1440
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Women_nylon_stockings_500x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Women_nylon_stockings_500x_-_SEM_MUSE.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48293801",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-21 08:49:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Women nylon stockings 500x - SEM MUSE",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Stockings|Images donated by MUSE - Science Museum|With trademark|Items with VRTS permission confirmed|Unknown date|Nylon stockings|SEM images from MUSE - Science Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Calza di nylon da donna al microscopio elettronico a scansione.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Museo_delle_Scienze\" class=\"extiw\" title=\"w:en:Museo delle Scienze\"><span title=\"science museum in Trento\">MUSE</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Nicola Angeli/MUSE\n</p>\n<table cellpadding=\"0\" cellspacing=\"0\" style=\"background:#fff;border:0px;border-left:8px solid #f80; vertical-align:top\">\n<tbody><tr>\n<td style=\"padding:2px 6px\">\n<p>This file was uploaded by <a rel=\"nofollow\" class=\"external text\" href=\"http://www.muse.it\">MUSE - Science Museum</a> of Trento in cooperation with <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wikimedia.it/\">Wikimedia Italia</a>.\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "trademarked",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
