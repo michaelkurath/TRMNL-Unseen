@@ -18,7 +18,7 @@ custom_fields:
   field_type: author_bio
   name: About UNSEEN
   github_url: https://github.com/michaelkurath/TRMNL-Unseen
-  description: Real museum micrographs, one per local calendar day. Prototype collection of ten subjects. Photographs by Nicola Angeli / MUSE, CC BY-SA 3.0; prepared images retain that licence.
+  description: 60 real micrographs, one per local calendar day. MUSE and University of Tartu contributors; individual CC BY and CC BY-SA credits appear on every plate.
 - keyname: assets_base_url
   field_type: string
   name: Public collection URL

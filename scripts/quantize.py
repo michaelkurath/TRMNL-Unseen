@@ -31,6 +31,8 @@ def contact(ids,target,width=1440):
    d.text((c*col+15,90+n*rh+5),e['title']+' / '+('OG' if p=='og' else 'X'),fill='#111111',font=small)
    canvas.paste(im,(x,y))
  tmp=target.with_suffix('.tmp.png');canvas.save(tmp,compress_level=3);tmp.replace(target)
-contact([e['id'] for e in entries],ROOT/'previews/all-ten-comparison.png')
+contact([e['id'] for e in entries[:10]],ROOT/'previews/all-ten-comparison.png')
+for n in range(0,len(entries),10):
+ contact([e['id'] for e in entries[n:n+10]],ROOT/f'previews/collection-{n+1:02d}-{min(n+10,len(entries)):02d}.png')
 contact(['butterfly-wing','velcro','copper'],ROOT.parent/'UNSEEN-preview.png')
 print(f"Quantized {len(report)} renders and created comparison sheets.")

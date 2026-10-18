@@ -15,13 +15,16 @@ async function main(){
  const browser=await chromium.launch({...(executable?{executablePath:executable}:{}),headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});
  const shared=fs.readFileSync(path.join(ROOT,'src/shared.liquid'),'utf8');
  const jobs=[];
- for(const p of profiles)for(let n=0;n<10;n++)jobs.push({p,n,layout:'full',caption:'yes'});
- for(const p of profiles)for(const layout of layouts.slice(1))jobs.push({p,n:1,layout,caption:'yes'});
+ const entries=require('../data/catalogue.json').entries;
+ for(const p of profiles)for(let n=0;n<entries.length;n++)jobs.push({p,n,layout:'full',caption:'yes'});
+ for(const layout of layouts.slice(1))for(let n=0;n<entries.length;n++)jobs.push({p:profiles[0],n,layout,caption:'yes'});
+ const longest=entries.map((e,n)=>({n,length:e.credit.length+e.title.length})).sort((a,b)=>b.length-a.length).slice(0,5);
+ for(const p of profiles.slice(1))for(const layout of layouts.slice(1))for(const {n} of longest)jobs.push({p,n,layout,caption:'yes'});
  for(const p of profiles.slice(0,2))for(const layout of layouts)jobs.push({p,n:0,layout,caption:'no'});
  for(const p of profiles.slice(0,2))for(const layout of layouts)jobs.push({p,n:0,layout,caption:'yes',setup:true});
  const profileFilter=process.env.RENDER_PROFILE,layoutFilter=process.env.RENDER_LAYOUT,subjectFilter=process.env.RENDER_SUBJECT;
  const subjectIds=require('../data/catalogue.json').entries.map(e=>e.id);
- const filteredJobs=jobs.filter(j=>(!profileFilter||profileFilter.split(',').includes(j.p.id))&&(!layoutFilter||j.layout===layoutFilter)&&(!subjectFilter||subjectIds[j.n]===subjectFilter));
+ const filteredJobs=jobs.filter(j=>(!profileFilter||profileFilter.split(',').includes(j.p.id))&&(!layoutFilter||j.layout===layoutFilter)&&(!subjectFilter||subjectFilter.split(',').includes(subjectIds[j.n])));
  const report=[],contexts=new Map();
  try{
   for(const j of filteredJobs){
@@ -31,7 +34,7 @@ async function main(){
    const input={trmnl:{system:{timestamp_utc:new Date(Date.UTC(2026,9,17+n,12)).toISOString()},user:{time_zone_iana:'Europe/Zurich'},plugin_settings:{custom_fields_values:{assets_base_url:j.setup?'':origin,show_caption:caption}}}};
    const data=run(input),markup=await engine.parseAndRender(shared+fs.readFileSync(path.join(ROOT,`src/${layout}.liquid`),'utf8'),data);
    const html=`<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="${origin}/vendor/plugins.css"><script src="${origin}/vendor/plugins.js"></script><style>html,body{margin:0;padding:0;background:#fff}.screen{margin:0!important;border-radius:0!important}.view{border-radius:0!important}</style></head><body class="environment trmnl"><div class="screen screen--no-bleed ${p.classes}"><div class="view view--${layout}">${markup}</div></div></body></html>`;
-   await page.setContent(html,{waitUntil:'networkidle'});
+   await page.setContent(html,{waitUntil:'load'});
    await page.evaluate(()=>document.fonts.ready);
    await page.evaluate(()=>Promise.all(Array.from(document.images).map(im=>im.decode())));
    const measurement=await page.evaluate(()=>{
@@ -45,6 +48,7 @@ async function main(){
    await page.locator('.view').screenshot({path:path.join(ROOT,'previews',filename+'-raw.png')});
    fs.writeFileSync(path.join(ROOT,'previews',filename+'.html'),html.replaceAll(origin,'..'));
    report.push({filename,profile:p.id,bits:p.bits,dpr:p.dpr,layout,subject:data.selected_entry.id,caption,setup:!!j.setup,...measurement});
+   if(report.length%20===0)console.log(`Rendered ${report.length}/${filteredJobs.length}`);
   }
  }finally{await browser.close();server.close();}
  const reportPath=path.join(ROOT,'previews/layout-report.json');

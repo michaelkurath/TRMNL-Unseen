@@ -1,15 +1,19 @@
 {
-  "version": "0.1.0",
-  "image_integrity_checks": 10,
-  "rotation_and_payload_tests": 15,
-  "layout_renders": 55,
+  "version": "0.2.0",
+  "image_integrity_checks": 60,
+  "rotation_and_payload_tests": 16,
+  "layout_renders": 406,
   "clipped_layouts": 0,
-  "palette_and_geometry_checks": 55,
+  "palette_and_geometry_checks": 406,
   "trmnlp_executed": false,
   "authenticated_trmnl_render_executed": false,
-  "physical_device_tested": false,
-  "installed": false,
-  "collection_size": 10,
-  "repeat_period_days": 10,
+  "live_render_owner_confirmation": {
+    "version": "0.1.0",
+    "date": "2026-10-18",
+    "result": "renders correctly",
+    "device_unspecified": true
+  },
+  "collection_size": 60,
+  "repeat_period_days": 60,
   "preview_processing": "Local browser rendering; Pillow Floyd-Steinberg photos for OG and 16-level grayscale quantization for X."
 }

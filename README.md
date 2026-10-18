@@ -1,18 +1,18 @@
 # UNSEEN — a hidden world, every day
 
-Version 0.1.0 · review prototype · 17 October 2026
+Version 0.2.0 · expanded collection · 18 October 2026
 
-Ten real scanning electron micrographs of familiar materials and small natural structures, photographed by Nicola Angeli / MUSE. One subject per local calendar day. Refreshes within that day keep the same subject. With ten entries, the collection repeats after ten days.
+Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. One plate per local calendar day, with no repetition for 60 days. Refreshes within that day keep the same plate.
 
 ## Review first
 
-Open `previews/index.html` for the image gallery. The full collection is also in `previews/all-ten-comparison.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
+Open `previews/index.html` for the image gallery. The collection is also available in six comparison sheets, `previews/collection-01-10.png` through `previews/collection-51-60.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
 
 All four layouts are included. OG full view uses a narrow caption panel beside the photograph; X full view uses a caption below it. The complete field of view is retained, including original scale bars. In portrait and narrow mashups, letterboxing is deliberate. Original capture magnification is labelled as capture magnification; it is not the magnification of the resized display image.
 
 ## Install on TRMNL
 
-This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. A live account/device render has not yet been verified; the public recipe has not been published.
+This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. The owner confirmed the v0.1.0 live TRMNL rendering works on 18 October 2026. The expanded v0.2.0 collection has local layout and image checks; its live rendering still needs a refresh after GitHub sync. The public recipe has not been published.
 
 1. The public images are included in this repository. Use `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main` as the Public collection URL. No separate hosting account or GitHub Pages setup is required.
 2. Open the existing UNSEEN Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
@@ -40,7 +40,7 @@ If Chromium is installed elsewhere, set `CHROMIUM_PATH` when running the render 
 
 For trmnlp: serve this directory with `python -m http.server 4568`, then run `trmnlp serve` from a second terminal in the same directory. The included `.trmnlp.yml` supplies the local asset root. This prototype was checked with the included render workflow; trmnlp itself was not available in the build environment.
 
-`scripts/collect.py` can re-fetch source images and attribution from Wikimedia Commons. It is not needed to use the bundled PNGs. The source TIFFs are omitted to reduce download size; their URLs and SHA-256 hashes are retained in `data/catalogue.json`. `scripts/build.py` rebuilds the embedded transform catalogue and credits after editorial changes. Keep catalogue order stable so updates do not unexpectedly change the day's selection.
+`scripts/collect.py` can re-fetch source images and attribution from Wikimedia Commons. It is not needed to use the bundled PNGs. The source TIFFs are omitted to reduce download size; their URLs and SHA-256 hashes are retained in `data/catalogue.json`. `scripts/build.py` rebuilds the embedded transform catalogue and credits after editorial changes. The original ten plates retain their order and the 17 October 2026 epoch; the new plates follow them. Changing collection length can change selections after the original ten-day window.
 
 ## Optional GitHub Pages gallery
 
@@ -48,8 +48,8 @@ In repository **Settings → Pages**, choose **Deploy from a branch**, branch **
 
 ## Image rights and code
 
-All ten photographs and prepared image derivatives are CC BY-SA 3.0. Attribution, licence links, source links and modification notices appear in `CREDITS.md`; a short credit remains on screen even when captions are disabled. Keep the CC BY-SA licence on distributed image derivatives. Code is MIT, separately from the photographs. The official framework and Inter font retain their own notices under `vendor/`.
+Photographs and prepared derivatives use CC BY-SA 3.0, CC BY-SA 4.0 or CC BY 4.0, as individually listed. Attribution, licence links, source links and modification notices appear in `CREDITS.md`; a short credit remains on screen even when captions are disabled. Keep each image's corresponding licence on distributed derivatives. Code is MIT, separately from the photographs. The official framework and Inter font retain their own notices under `vendor/`.
 
 ## Next release gate
 
-Judge the ten subjects at actual size, replace weak plates, then expand the collection before public release. Confirm live polling and device rendering after a TRMNL plugin instance exists. A ten-day collection is sufficient for visual review; it is too small for a long-term daily product.
+Sync the expanded collection from GitHub and Force Refresh. Check representative new plates in the live full and mashup previews before public release. The existing live integration is confirmed by the owner; the expanded catalogue repeats after 60 days.

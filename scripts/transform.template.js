@@ -35,7 +35,7 @@ function run(input = {}) {
     date: day, display_date: day.slice(8,10) + '.' + day.slice(5,7) + '.' + day.slice(0,4),
     plate_number: String(index + 1).padStart(3,'0'), total_plates: CATALOGUE.length,
     show_caption: caption, setup_required: !validRoot,
-    notice: 'Prototype: ten subjects, repeating after ten days.'
+    notice: `${CATALOGUE.length} plates, repeating after ${CATALOGUE.length} local calendar days.`
   };
 }
 if (typeof module !== 'undefined') module.exports = {run, localDate, timestamp, CATALOGUE};
