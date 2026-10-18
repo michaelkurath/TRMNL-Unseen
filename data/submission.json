@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-18",
+  "plugin_id": 510793,
+  "status": "submitted_for_public_human_review",
+  "publicly_published": false,
+  "owner_approved_plugin_license": true,
+  "categories": [
+    "images",
+    "education"
+  ],
+  "ai_chef_review_id": 1227,
+  "chef_findings": [
+    {
+      "severity": "suggestion",
+      "topic": "Use more Framework typography and color utilities in caption/credit styles."
+    },
+    {
+      "severity": "suggestion",
+      "topic": "Consider a side-by-side caption on X to reduce letterboxing."
+    },
+    {
+      "severity": "nitpick",
+      "topic": "Plate number is repeated in caption and title bar."
+    }
+  ],
+  "critical_findings": 0,
+  "submission_confirmation": "Submitted! We'll be in touch soon.",
+  "persisted_status": "Blaupause wird gepr\u00fcft",
+  "review_ticket_created": true,
+  "picture_mode_restored": "every_refresh",
+  "screenshot": "previews/submitted-review.jpg"
+}

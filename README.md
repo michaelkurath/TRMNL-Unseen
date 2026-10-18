@@ -12,7 +12,7 @@ All four layouts use the standard TRMNL `title_bar`, as a direct sibling after t
 
 ## Install on TRMNL
 
-The public recipe is being prepared and is not published yet. Once available, installation will copy the layouts, Serverless code and settings automatically. No API key or separate hosting account is needed.
+Unseen was submitted for public review on 18 October 2026 and is not published yet. Once available, installation will copy the layouts, Serverless code and settings automatically. No API key or separate hosting account is needed.
 
 1. Leave **Public collection URL** at `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main`.
 2. Choose **Daily** for one picture per local calendar day, or **Every refresh** for a new plate at each plugin data refresh.
@@ -75,4 +75,4 @@ The standard title bar was verified in the authenticated TRMNL editor on 18 Octo
 
 The 25 rotation/payload tests pass. The title-bar update also has 46 local layout checks, including long credits, captions off and setup states; the earlier 406 collection checks remain recorded separately. Live Every refresh advancement from plate 003 to 004 is documented in `data/live-validation.json`.
 
-The monochrome 512 × 512 diatom icon and editable SVG are in `assets/branding/`. The marketplace copy and outstanding submission steps are recorded in `RELEASE.md`. Public submission and AI Chef review are not yet complete.
+The monochrome 512 × 512 diatom icon and editable SVG are in `assets/branding/`. The marketplace copy and outstanding submission steps are recorded in `RELEASE.md`. Public submission completed on 18 October 2026. AI Chef returned two suggestions and one nitpick, with no critical findings. The recipe is awaiting human review; see `data/submission.json`.

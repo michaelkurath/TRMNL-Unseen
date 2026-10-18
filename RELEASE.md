@@ -23,10 +23,23 @@ Photographs are credited individually to MUSE and University of Tartu contributo
 - TRMNL marketplace featured image generated and confirmed (800 × 480).
 - Setup instructions, refresh semantics, source credits and support link.
 
-## Outstanding
+## Submission status — 18 October 2026
 
-- Check the result on a physical device; browser previews cannot prove physical e-paper readability.
-- Run the submission's AI Chef review and resolve any returned issues. No Chef approval has been claimed.
-- Submit publicly after the owner confirms TRMNL's linked Plugin License. The submission dialog states that public recipes are subject to that licence. The publishing-best-practices page has been reviewed.
+Submitted publicly under the owner-approved TRMNL Plugin License. TRMNL confirmed “Submitted! We'll be in touch soon.” and created a Recipe Review ticket. The saved settings now show “Blaupause wird geprüft” (recipe under review). This is a pending review, not public publication.
 
-Prepared on 18 October 2026. Not a claim of public publication or AI Chef approval.
+The first Chef check required a category; `images,education` was added. AI Chef review 1227 then returned two suggestions and one nitpick, with no critical findings:
+
+- Prefer Framework typography/color utilities over custom caption and credit CSS.
+- Consider a side-by-side caption on X to reduce letterboxing.
+- Avoid repeating the plate number in the caption and title bar.
+
+Submitted the tested layouts for human review with these refinements recorded. The native title bar, actual layout wrapper and responsive CSS are present; the simpler automated source scan's missing-include/layout/responsive-class hints do not reflect the rendered Shared capture structure. Twelve hosted layout checks and 46 local title-bar checks remain available.
+
+The GitHub import reset this instance's picture mode to Daily. Every refresh was restored and saved after submission. The recipe's default remains Daily for new installations.
+
+## Remaining
+
+- Await human review and address returned feedback.
+- Check readability on a physical device; hosted previews cannot prove physical e-paper output.
+
+See `data/submission.json` and `previews/submitted-review.jpg` for the submission record.
