@@ -19,14 +19,14 @@ Photographs are credited individually to MUSE and University of Tartu contributo
 - 25 rotation/payload tests and 60 image integrity/source checks.
 - 46 local title-bar render checks, including long credits, captions off and setup states.
 - Every refresh mode was verified advancing through live plates 003 and 004.
-- Original 512 × 512 diatom icon, editable SVG and MIT licence.
+- Original 512 × 512 diatom icon, editable SVG and MIT licence; icon saved in the live plugin.
+- TRMNL marketplace featured image generated and confirmed (800 × 480).
 - Setup instructions, refresh semantics, source credits and support link.
 
 ## Outstanding
 
 - Check the result on a physical device; browser previews cannot prove physical e-paper readability.
-- Generate the marketplace featured image after the icon is saved.
-- Run the submission's AI Chef review and resolve any returned issues. The editor's separate AI Agent currently reports no usage credits; no paid credits have been purchased.
+- Run the submission's AI Chef review and resolve any returned issues. No Chef approval has been claimed.
 - Submit publicly after the owner confirms TRMNL's linked Plugin License. The submission dialog states that public recipes are subject to that licence. The publishing-best-practices page has been reviewed.
 
 Prepared on 18 October 2026. Not a claim of public publication or AI Chef approval.
