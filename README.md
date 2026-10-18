@@ -1,8 +1,8 @@
 # UNSEEN — a hidden world, every day
 
-Version 0.2.0 · expanded collection · 18 October 2026
+Version 0.2.1 · picture change modes · 18 October 2026
 
-Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. One plate per local calendar day, with no repetition for 60 days. Refreshes within that day keep the same plate.
+Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. Daily mode (the default) keeps one plate per local calendar day, with no repetition for 60 days. Every refresh mode advances through the collection each time the plugin refreshes, then loops after all 60 plates.
 
 ## Review first
 
@@ -21,6 +21,17 @@ This repository is linked to TRMNL plugin **510793**. The plugin ID and sync con
 5. Force Refresh and verify the four layouts on your account. Review the licence credits and outbound image requests before public release.
 
 There are no API keys and no runtime image-generation calls. Serverless emits one plate, not the entire catalogue. The image files are fetched separately from the public host and passed through TRMNL's `image-dither` platform handling.
+
+## Picture change modes
+
+Choose **Picture change mode** in plugin settings:
+
+- **Daily** (default): one picture per local calendar day. Repeated refreshes keep the same picture.
+- **Every refresh**: the next picture on each scheduled plugin data refresh or **Force Refresh**. All 60 pictures appear before the cycle repeats. Replaying an already cached screen in your device playlist does not advance the picture.
+
+TRMNL Saved State remembers the last plate, including across Force Refresh. Switching from Daily to Every refresh advances from the last displayed daily plate; switching back restores the calendar selection. A fresh install or cleared/obsolete saved cursor starts on the current daily plate. Invalid image-host settings do not advance the cursor. State uses a single plate ID, without storing the collection or image data. See [TRMNL Saved State](https://help.trmnl.com/en/articles/16777795-saved-state).
+
+After syncing this update from GitHub, select **Every refresh**, save, then Force Refresh twice to verify two different plates.
 
 ## Reproduce the checks
 

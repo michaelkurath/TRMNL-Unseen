@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "image_integrity_checks": 60,
-  "rotation_and_payload_tests": 16,
+  "rotation_and_payload_tests": 25,
   "layout_renders": 406,
   "clipped_layouts": 0,
   "palette_and_geometry_checks": 406,
@@ -15,5 +15,11 @@
   },
   "collection_size": 60,
   "repeat_period_days": 60,
-  "preview_processing": "Local browser rendering; Pillow Floyd-Steinberg photos for OG and 16-level grayscale quantization for X."
+  "preview_processing": "Local browser rendering; Pillow Floyd-Steinberg photos for OG and 16-level grayscale quantization for X.",
+  "layout_validation_version": "0.2.0",
+  "picture_modes": [
+    "daily",
+    "every_refresh"
+  ],
+  "refresh_mode_checks": "Same-timestamp advancement, full cycle, stale cursor recovery, mode switches, Force Refresh, setup failure and payload size."
 }

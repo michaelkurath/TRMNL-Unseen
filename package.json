@@ -1,6 +1,6 @@
 {
   "name": "trmnl-unseen",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {"test": "node tests/rotation.test.js", "render": "node scripts/render.js"},
   "devDependencies": {"liquidjs": "10.30.0", "playwright": "1.62.1"}
