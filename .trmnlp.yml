@@ -1,0 +1,5 @@
+---
+time_zone: Europe/Zurich
+custom_fields:
+  assets_base_url: http://127.0.0.1:4568
+  show_caption: 'yes'

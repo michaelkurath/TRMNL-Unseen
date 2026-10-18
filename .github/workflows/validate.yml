@@ -1,0 +1,23 @@
+name: Validate UNSEEN
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - name: Daily rotation and payload checks
+        run: npm test
+      - name: Image integrity, credits and generated catalogue
+        run: python scripts/validate.py
