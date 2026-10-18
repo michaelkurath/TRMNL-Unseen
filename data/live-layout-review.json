@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-18",
+  "version": "0.2.3",
+  "plugin_id": 510793,
+  "scope": "Authenticated editor previews; no physical device verification",
+  "checks": [
+    {
+      "profile": "OG",
+      "layout": "full",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 480,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 800
+    },
+    {
+      "profile": "OG",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 225,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 780
+    },
+    {
+      "profile": "OG",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 460,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 385
+    },
+    {
+      "profile": "OG",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 225,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 385
+    },
+    {
+      "profile": "X",
+      "layout": "full",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 780,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 1040
+    },
+    {
+      "profile": "X",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 375,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 1020
+    },
+    {
+      "profile": "X",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 760,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 505
+    },
+    {
+      "profile": "X",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 375,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 505
+    },
+    {
+      "profile": "X portrait",
+      "layout": "full",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 1040,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 780
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 505,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 760
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 1020,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 375
+    },
+    {
+      "profile": "X portrait",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Anneli Sidoruk · CC BY 4.0 · adapted",
+      "height": 505,
+      "imageDecoded": true,
+      "titlebar": "Unseen\n  Plate 011",
+      "width": 375
+    }
+  ]
+}

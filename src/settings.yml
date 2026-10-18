@@ -18,7 +18,17 @@ custom_fields:
   field_type: author_bio
   name: About Unseen
   github_url: https://github.com/michaelkurath/TRMNL-Unseen
-  description: 60 real micrographs, changing daily or on every refresh. MUSE and University of Tartu contributors; individual CC BY and CC BY-SA credits appear on every plate.
+  description: >-
+    Discover 60 real scanning electron micrographs of familiar materials, natural
+    structures and tiny engineered worlds. Choose one picture per local calendar
+    day or a new picture on every plugin refresh.<br/><br/>
+    No API key or separate hosting is needed. Leave Public collection URL at its
+    default, choose a picture mode, then save. Replaying a cached playlist screen
+    does not advance the collection. Photo credits remain visible with captions off.<br/><br/>
+    Photography from MUSE and University of Tartu contributors; individual CC BY
+    and CC BY-SA credits appear on every plate.
+    <a href="https://github.com/michaelkurath/TRMNL-Unseen#readme">Setup and source credits</a>
+    · <a href="https://github.com/michaelkurath/TRMNL-Unseen/issues">Support and feedback</a>.
 - keyname: assets_base_url
   field_type: string
   name: Public collection URL
@@ -42,5 +52,5 @@ custom_fields:
   - 'No': 'no'
   default: 'yes'
 name: Unseen
-description: A hidden world, every day
+description: Discover the microscopic world
 refresh_interval: 60

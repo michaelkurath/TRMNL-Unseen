@@ -4,7 +4,7 @@ Version 0.2.3 · standard title bar · 18 October 2026
 
 Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. Daily mode (the default) keeps one plate per local calendar day, with no repetition for 60 days. Every refresh mode advances through the collection each time the plugin refreshes, then loops after all 60 plates.
 
-## Review first
+## Preview the collection
 
 Open `previews/index.html` for the image gallery. The collection is also available in six comparison sheets, `previews/collection-01-10.png` through `previews/collection-51-60.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
 
@@ -12,15 +12,23 @@ All four layouts use the standard TRMNL `title_bar`, as a direct sibling after t
 
 ## Install on TRMNL
 
-This repository is linked to TRMNL plugin **510793**. The plugin ID and sync configuration are retained in the source. The owner confirmed the v0.1.0 live TRMNL rendering works on 18 October 2026. Version 0.2.2 was verified directly in the authenticated TRMNL web UI: Every refresh advanced from Micrometeorite (003) to A sheet of paper (004), with the Unseen name visible. See `data/live-validation.json` and `previews/live-refresh-003.jpg` / `previews/live-refresh-004.jpg`. The public recipe has not been published.
+The public recipe is being prepared and is not published yet. Once available, installation will copy the layouts, Serverless code and settings automatically. No API key or separate hosting account is needed.
 
-1. The public images are included in this repository. Use `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main` as the Public collection URL. No separate hosting account or GitHub Pages setup is required.
-2. Open the existing Unseen Private Plugin (ID **510793**), using Polling. The polling URL is `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/data/ping.json`; refresh hourly. This small file triggers scheduled processing; the Serverless output supplies the date and subject. The day changes at the first successful refresh after local midnight, not necessarily exactly at midnight.
-3. Add the custom fields from `src/settings.yml`. Keep the default Public collection URL above, or set your own HTTPS mirror without a trailing slash.
-4. Paste `src/transform.js` into the Serverless tab, choosing Node. Paste `src/shared.liquid` into Shared and each remaining `.liquid` file into its corresponding layout tab. Enable Remove Bleed Margin.
-5. Force Refresh and verify the four layouts on your account. Review the licence credits and outbound image requests before public release.
+1. Leave **Public collection URL** at `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main`.
+2. Choose **Daily** for one picture per local calendar day, or **Every refresh** for a new plate at each plugin data refresh.
+3. Choose whether to show the subject caption. Photo credit and licence always remain visible.
+4. Save and add Unseen to your device playlist. **Force Refresh** requests a new data render; replaying a cached playlist screen does not advance the plate. Hourly refresh is the default. Daily mode changes at the first successful refresh after local midnight.
 
-There are no API keys and no runtime image-generation calls. Serverless emits one plate, not the entire catalogue. The image files are fetched separately from the public host and passed through TRMNL's `image-dither` platform handling.
+For development or a manual private-plugin installation:
+
+1. Create a Private Plugin with **Polling**, **Node Serverless**, Framework **3.4.3**, and **Remove Bleed Margin** enabled.
+2. Add the custom fields from `src/settings.yml`. The polling URL is `{{ assets_base_url }}/data/ping.json` and the default refresh interval is 60 minutes.
+3. Paste `src/transform.js` into Serverless, `src/shared.liquid` into Shared, and the four remaining `.liquid` files into the corresponding layout tabs.
+4. Upload `assets/branding/unseen-icon.png` as the plugin icon. Save, Force Refresh and check the preview.
+
+The repository's plugin ID **510793** identifies the author's linked development instance; do not reuse it for another account. There are no runtime image-generation calls. Serverless emits one plate, not the entire catalogue. Images load separately from the public repository and use TRMNL's `image-dither` handling.
+
+Questions or rendering problems? [Open a GitHub issue](https://github.com/michaelkurath/TRMNL-Unseen/issues) with your device, layout, picture mode and plate number.
 
 ## Picture change modes
 
@@ -61,6 +69,10 @@ In repository **Settings → Pages**, choose **Deploy from a branch**, branch **
 
 Photographs and prepared derivatives use CC BY-SA 3.0, CC BY-SA 4.0 or CC BY 4.0, as individually listed. Attribution, licence links, source links and modification notices appear in `CREDITS.md`; a short credit remains on screen even when captions are disabled. Keep each image's corresponding licence on distributed derivatives. Code is MIT, separately from the photographs. The official framework and Inter font retain their own notices under `vendor/`.
 
-## Next release gate
+## Release verification
 
-Live Every refresh advancement and the Unseen name were verified on TRMNL X full-screen preview on 18 October 2026. Check the remaining live mashup/OG views before public release; the earlier 406 local geometry/palette checks remain available. Daily mode repeats after 60 days; Every refresh repeats after 60 successful plugin refreshes.
+The standard title bar was verified in the authenticated TRMNL editor on 18 October 2026. All four layouts were checked on OG 1-bit, X landscape and X portrait: 12 live previews, decoded images, visible attribution and no measured clipping. See `data/live-layout-review.json`. These checks use the hosted editor; they are not photographs of a physical device.
+
+The 25 rotation/payload tests pass. The title-bar update also has 46 local layout checks, including long credits, captions off and setup states; the earlier 406 collection checks remain recorded separately. Live Every refresh advancement from plate 003 to 004 is documented in `data/live-validation.json`.
+
+The monochrome 512 × 512 diatom icon and editable SVG are in `assets/branding/`. The marketplace copy and outstanding submission steps are recorded in `RELEASE.md`. Public submission and AI Chef review are not yet complete.
