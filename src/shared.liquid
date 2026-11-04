@@ -1,29 +1,26 @@
-<style>
-/* Image geometry and compact-view visibility only; typography, spacing and colors use the Framework. */
-.unseen-layout,.unseen{min-height:0}
-.unseen{overflow:hidden}
-.unseen__image{flex:1 1 0;min-height:0;overflow:hidden}
-.unseen__subject,.unseen__rights{min-width:0;overflow-wrap:anywhere}
-.view--half_horizontal .unseen__method,.view--quadrant .unseen__method{display:none}
-.screen--md:not(.screen--lg) .view--full .unseen:has(.unseen__caption){display:grid;grid-template-columns:minmax(0,1fr) 190px;grid-template-rows:minmax(0,1fr) auto}
-.screen--md:not(.screen--lg) .view--full .unseen:has(.unseen__caption) .unseen__image{grid-column:1;grid-row:1 / 3}
-.screen--md:not(.screen--lg) .view--full .unseen__caption{grid-column:2;grid-row:1}
-.screen--md:not(.screen--lg) .view--full .unseen__credit{grid-column:2;grid-row:2}
-</style>
-{% capture unseen_exhibit %}
-{% if setup_required %}
-  <div class="unseen flex flex--col flex--stretch-x gap--small w--full h--full p--6"><span class="title lg:title--large">Unseen</span><span class="description lg:description--large">Add the public collection URL in plugin settings to load today's micrograph.</span></div>
-{% else %}
-<figure class="unseen flex flex--col flex--stretch-x gap--none w--full h--full m--0">
-  <div class="unseen__image relative bg--black"><img class="image image-dither image--contain absolute top--0 left--0 w--full h--full" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph"></div>
-  {% if show_caption %}<figcaption class="unseen__caption flex flex--col flex--top flex--stretch-x gap--small shrink-0 px--3 py--2 lg:p--4 border--h-10">
-    <span class="unseen__subject title lg:title--large">{{ selected_entry.title | escape }}</span>
-    {% if selected_entry.magnification != blank %}<span class="description lg:description--large">{{ selected_entry.magnification | escape }} capture</span>{% endif %}
-    <div class="unseen__method description lg:description--large">Scanning electron micrograph</div><div class="unseen__method description lg:description--large">{{ display_date }}</div>
-  </figcaption>{% endif %}
-  <div class="unseen__credit shrink-0 px--3 py--2 lg:px--4 border--h-10"><span class="unseen__rights description lg:description--large"><a class="text--black" href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a class="text--black" href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span></div>
-</figure>
-{% endif %}
+{% capture unseen_setup %}
+<div class="unseen__setup flex flex--col flex--top flex--stretch-x gap--small w--full h--full p--6">
+  <span class="title lg:title--large">Unseen</span>
+  <span class="description lg:description--large">Add the public collection URL in plugin settings to load today's micrograph.</span>
+</div>
+{% endcapture %}
+{% capture unseen_image %}
+<div class="unseen__image grow relative bg--black w--full">
+  <img class="image image-dither image--contain absolute top--0 left--0 w--full h--full" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph">
+</div>
+{% endcapture %}
+{% capture unseen_subject %}
+<span class="unseen__subject title lg:title--large">{{ selected_entry.title | escape }}</span>
+{% if selected_entry.magnification != blank %}<span class="description lg:description--large">{{ selected_entry.magnification | escape }} capture</span>{% endif %}
+{% endcapture %}
+{% capture unseen_details %}
+<div class="description lg:description--large">Scanning electron micrograph</div>
+<div class="description lg:description--large">{{ display_date }}</div>
+{% endcapture %}
+{% capture unseen_credit %}
+<div class="unseen__credit shrink-0 px--3 py--2 lg:px--4 border--h-10">
+  <span class="unseen__rights description lg:description--large"><a class="text--black" href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a class="text--black" href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span>
+</div>
 {% endcapture %}
 {% capture unseen_titlebar %}
 <div class="title_bar">

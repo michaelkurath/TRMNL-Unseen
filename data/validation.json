@@ -1,12 +1,12 @@
 {
-  "version": "0.2.4",
+  "version": "0.2.5",
   "image_integrity_checks": 60,
   "rotation_and_payload_tests": 26,
   "layout_renders": 406,
   "clipped_layouts": 0,
   "palette_and_geometry_checks": 406,
   "trmnlp_executed": false,
-  "authenticated_trmnl_render_executed": true,
+  "authenticated_trmnl_render_executed": false,
   "live_render_owner_confirmation": {
     "version": "0.1.0",
     "date": "2026-10-18",
@@ -16,7 +16,7 @@
   "collection_size": 60,
   "repeat_period_days": 60,
   "preview_processing": "Local browser rendering; Pillow Floyd-Steinberg photos for OG and 16-level grayscale quantization for X.",
-  "layout_validation_version": "0.2.4",
+  "layout_validation_version": "0.2.5",
   "picture_modes": [
     "daily",
     "every_refresh"
@@ -43,7 +43,7 @@
     "picture_mode": "every_refresh",
     "screenshot": "previews/live-titlebar.jpg"
   },
-  "layout_report": "previews/framework-layout-report.json",
+  "layout_report": "previews/framework-only-layout-report.json",
   "geometry_method": "Actual Framework mashup wrappers and screen--1x; matches hosted OG/X geometry.",
   "caption_boolean_values": [
     "true",
@@ -56,6 +56,7 @@
     "no"
   ],
   "custom_typography_declarations": 0,
-  "live_layout_checks": 12,
-  "live_framework_review_record": "data/framework-live-review.json"
+  "live_framework_review_record": "data/framework-live-review.json",
+  "custom_css_rules": 0,
+  "inline_style_attributes": 0
 }

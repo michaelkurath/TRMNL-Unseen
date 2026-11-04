@@ -55,3 +55,7 @@ See `data/submission.json` and `previews/submitted-review.jpg` for the submissio
 Validation completed: 26 rotation/caption tests, 60 source/image checks, 406 local renders at corrected geometry, and 12 authenticated hosted previews. No clipping was measured. The boolean was tested both off (credit retained) and on in the live plugin; captions were restored on. The instance picture mode remains Daily, matching the setting observed before this update.
 
 The update is synced to the linked TRMNL plugin and is ready for another review. This follow-up has not been sent to Mario automatically.
+
+## Framework-only follow-up — v0.2.5
+
+Removed all nine remaining custom CSS rules. The plugin uses only Framework utilities and Liquid composition. OG full view now stacks the photo above its caption rather than using a bespoke side panel. Full and half-vertical views retain method/date details; compact views omit them at markup generation time. Image containment, boolean captions, source credits and the standard title bar are retained.

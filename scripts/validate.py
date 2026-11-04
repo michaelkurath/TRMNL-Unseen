@@ -38,13 +38,16 @@ compact = [{k:e[k] for k in keys} for e in catalogue]
 expected = (ROOT / 'scripts/transform.template.js').read_text().replace('__CATALOGUE__', json.dumps(compact, ensure_ascii=False, separators=(',', ':')))
 assert (ROOT / 'src/transform.js').read_text() == expected, 'Run python scripts/build.py'
 for layout in ('full','half_horizontal','half_vertical','quadrant'):
-    assert '{{ unseen_exhibit }}' in (ROOT / f'src/{layout}.liquid').read_text()
+    assert all('{{ ' + name + ' }}' in (ROOT / f'src/{layout}.liquid').read_text() for name in ('unseen_image','unseen_subject','unseen_credit','unseen_setup'))
     assert '{{ unseen_titlebar }}' in (ROOT / f'src/{layout}.liquid').read_text()
+    markup = (ROOT / f'src/{layout}.liquid').read_text()
+    assert '<style' not in markup.lower() and not re.search(r'\bstyle\s*=', markup, re.I), 'No custom CSS in layouts'
 assert '<div class="title_bar">' in (ROOT / 'src/shared.liquid').read_text()
 assert 'image-dither' in (ROOT / 'src/shared.liquid').read_text()
 assert len(json.loads((ROOT / 'data/ping.json').read_text())) > 0
 
 shared = (ROOT / 'src/shared.liquid').read_text()
+assert '<style' not in shared.lower() and not re.search(r'\bstyle\s*=', shared, re.I), 'Use Framework utilities only'
 assert not re.search(r'font-(?:family|size|weight)\s*:|line-height\s*:', shared), 'Use Framework typography classes'
 assert 'title lg:title--large' in shared
 assert 'description lg:description--large' in shared

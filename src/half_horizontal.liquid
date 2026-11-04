@@ -1,2 +1,12 @@
-<div class="layout unseen-layout p--0">{{ unseen_exhibit }}</div>
+<div class="layout layout--col gap--none p--0">
+{% if setup_required %}{{ unseen_setup }}{% else %}
+<div class="flex flex--col flex--stretch-x gap--none w--full h--full">
+{{ unseen_image }}
+{% if show_caption %}<div class="unseen__caption flex flex--col flex--top flex--stretch-x gap--small shrink-0 px--3 py--2 lg:p--4 border--h-10">
+{{ unseen_subject }}
+</div>{% endif %}
+{{ unseen_credit }}
+</div>
+{% endif %}
+</div>
 {{ unseen_titlebar }}
