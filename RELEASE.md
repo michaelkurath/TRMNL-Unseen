@@ -59,3 +59,5 @@ The update is synced to the linked TRMNL plugin and is ready for another review.
 ## Framework-only follow-up — v0.2.5
 
 Removed all nine remaining custom CSS rules. The plugin uses only Framework utilities and Liquid composition. OG full view now stacks the photo above its caption rather than using a bespoke side panel. Full and half-vertical views retain method/date details; compact views omit them at markup generation time. Image containment, boolean captions, source credits and the standard title bar are retained.
+
+Validation: 26 tests, 60 image/source checks, 406 local renders and 12 authenticated hosted layouts passed. Every hosted layout has zero style blocks and zero inline style attributes, a visible decoded photograph and attribution, and no measured clipping. Current preferences (Daily, caption enabled) were preserved. The Framework-only update is synced to TRMNL.

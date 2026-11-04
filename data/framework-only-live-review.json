@@ -1,0 +1,150 @@
+{
+  "version": "0.2.5",
+  "date": "2026-11-04",
+  "checks": [
+    {
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 480,
+      "imageDecoded": true,
+      "imageHeight": 321,
+      "inlineStyles": 0,
+      "layout": "full",
+      "profile": "OG",
+      "styleBlocks": 0,
+      "width": 800
+    },
+    {
+      "profile": "OG",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 225,
+      "imageDecoded": true,
+      "imageHeight": 122,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 780
+    },
+    {
+      "profile": "OG",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 460,
+      "imageDecoded": true,
+      "imageHeight": 319,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 385
+    },
+    {
+      "profile": "OG",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 225,
+      "imageDecoded": true,
+      "imageHeight": 122,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 385
+    },
+    {
+      "profile": "X",
+      "layout": "full",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 780,
+      "imageDecoded": true,
+      "imageHeight": 574.4375,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 1040
+    },
+    {
+      "profile": "X",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 375,
+      "imageDecoded": true,
+      "imageHeight": 239.8125,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 1020
+    },
+    {
+      "profile": "X",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 760,
+      "imageDecoded": true,
+      "imageHeight": 572.4375,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 505
+    },
+    {
+      "profile": "X",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 375,
+      "imageDecoded": true,
+      "imageHeight": 239.8125,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 505
+    },
+    {
+      "profile": "X portrait",
+      "layout": "full",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 1040,
+      "imageDecoded": true,
+      "imageHeight": 834.4375,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 780
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 505,
+      "imageDecoded": true,
+      "imageHeight": 369.8125,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 760
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_vertical",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 1020,
+      "imageDecoded": true,
+      "imageHeight": 832.4375,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 375
+    },
+    {
+      "profile": "X portrait",
+      "layout": "quadrant",
+      "clipped": [],
+      "credit": "Maido Merisalu · CC BY-SA 4.0 · adapted",
+      "height": 505,
+      "imageDecoded": true,
+      "imageHeight": 369.8125,
+      "inlineStyles": 0,
+      "styleBlocks": 0,
+      "width": 375
+    }
+  ]
+}
