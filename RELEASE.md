@@ -52,4 +52,6 @@ See `data/submission.json` and `previews/submitted-review.jpg` for the submissio
 - Removed the duplicate plate number from the caption; the standard title bar retains it.
 - Corrected the local render harness to use actual mashup wrappers and screen--1x, matching the hosted previews. Older full-size compact simulations are historical evidence only.
 
-This follow-up has not been sent to Mario automatically.
+Validation completed: 26 rotation/caption tests, 60 source/image checks, 406 local renders at corrected geometry, and 12 authenticated hosted previews. No clipping was measured. The boolean was tested both off (credit retained) and on in the live plugin; captions were restored on. The instance picture mode remains Daily, matching the setting observed before this update.
+
+The update is synced to the linked TRMNL plugin and is ready for another review. This follow-up has not been sent to Mario automatically.

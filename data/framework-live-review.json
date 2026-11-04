@@ -1,0 +1,140 @@
+{
+  "version": "0.2.4",
+  "date": "2026-11-04",
+  "caption_false_verified": true,
+  "caption_true_verified": true,
+  "checks": [
+    {
+      "profile": "OG",
+      "layout": "full",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 480,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 800
+    },
+    {
+      "profile": "OG",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 225,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 780
+    },
+    {
+      "profile": "OG",
+      "layout": "half_vertical",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 460,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 385
+    },
+    {
+      "profile": "OG",
+      "layout": "quadrant",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 225,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 385
+    },
+    {
+      "profile": "X",
+      "layout": "full",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 780,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 1040
+    },
+    {
+      "profile": "X",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 375,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 1020
+    },
+    {
+      "profile": "X",
+      "layout": "half_vertical",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 760,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 505
+    },
+    {
+      "profile": "X",
+      "layout": "quadrant",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 375,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 505
+    },
+    {
+      "profile": "X portrait",
+      "layout": "full",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 1040,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 780
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_horizontal",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 505,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 760
+    },
+    {
+      "profile": "X portrait",
+      "layout": "half_vertical",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 1020,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 375
+    },
+    {
+      "profile": "X portrait",
+      "layout": "quadrant",
+      "clipped": [],
+      "creditClass": "unseen__rights description lg:description--large",
+      "height": 505,
+      "imageDecoded": true,
+      "subjectClass": "unseen__subject title lg:title--large",
+      "titlebar": "Unseen\n  Plate 019",
+      "width": 375
+    }
+  ]
+}
