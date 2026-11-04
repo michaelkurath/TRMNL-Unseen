@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 20759)
-Total output lines: 1207
-
 {
   "version": "0.2.5",
   "entries": [
@@ -600,7 +597,59 @@ Total output lines: 1207
       "local_image": "assets/plates/hemimorphite.png",
       "width": 2048,
       "height": 1536,
-      "source_sha256": "bbd6e691b8552568f3527bf34e9903f4f4bb729f24bd1349bc9c7be0e56506bd…759 tokens truncated…"CC BY-SA 3.0",
+      "source_sha256": "bbd6e691b8552568f3527bf34e9903f4f4bb729f24bd1349bc9c7be0e56506bd",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "source_description": "Emimorfite al microscopio elettronico a scansione."
+    },
+    {
+      "id": "sample-lamella",
+      "title": "Microscope sample",
+      "theme": "Materials & nanostructures",
+      "magnification": "",
+      "method": "Scanning electron microscopy",
+      "creator": "Markus Otsus",
+      "credit": "Markus Otsus",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:K%C3%BClgvaade_lamellist.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/K%C3%BClgvaade_lamellist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/K%C3%BClgvaade_lamellist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "local_image": "assets/plates/sample-lamella.png",
+      "width": 1024,
+      "height": 883,
+      "source_sha256": "6bad4778fa4b3ca0e849bfb3f26c4fc5c4682c251fbed1d00bdbaeefec46fe6b",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "source_description": "Image of a sample being prepared for viewing with a transmission electron microscope. Image taken with a scanning electron microscope."
+    },
+    {
+      "id": "horse-fly",
+      "title": "Horse fly",
+      "theme": "Museum micrographs",
+      "magnification": "",
+      "method": "Scanning electron microscopy",
+      "creator": "Nicola Angeli / MUSE",
+      "credit": "Nicola Angeli / MUSE",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Horse-fly_-_SEM_MUSE.tif",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Horse-fly_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Horse-fly_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "local_image": "assets/plates/horse-fly.png",
+      "width": 2048,
+      "height": 1536,
+      "source_sha256": "5e55a64c3765b0539438ba13ef3a9f9e92c7c27e9b9b588ec01a8d7608d70fe3",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "source_description": "Un tafano al microscopio elettronico a scansione."
+    },
+    {
+      "id": "graphene-bubbles",
+      "title": "Graphene bubbles",
+      "theme": "Materials & nanostructures",
+      "magnification": "",
+      "method": "Scanning electron microscopy",
+      "creator": "Jekaterinakozlova",
+      "credit": "Jekaterinakozlova",
+      "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source_page": "https://commons.wikimedia.org/wiki/File:Mullitav_grafeen.tif",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Mullitav_grafeen.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
