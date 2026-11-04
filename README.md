@@ -1,12 +1,12 @@
 # Unseen — a hidden world, every day
 
-Version 0.2.3 · standard title bar · 18 October 2026
+Version 0.2.4 · Framework typography and boolean caption · 4 November 2026
 
 Sixty real scanning electron micrographs: familiar materials, natural structures, minerals and nanostructures. Photographs from MUSE and contributors at the University of Tartu; individual credits and licences are recorded for every plate. Daily mode (the default) keeps one plate per local calendar day, with no repetition for 60 days. Every refresh mode advances through the collection each time the plugin refreshes, then loops after all 60 plates.
 
 ## Preview the collection
 
-Open `previews/index.html` for the image gallery. The collection is also available in six comparison sheets, `previews/collection-01-10.png` through `previews/collection-51-60.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
+Open `previews/index.html` for the image gallery. Current v0.2.4 layout samples are `previews/framework-og-full.png`, `previews/framework-x-full.png` and `previews/framework-og-quadrant.png`; collection thumbnails retain earlier styling. The collection is also available in six comparison sheets, `previews/collection-01-10.png` through `previews/collection-51-60.png`. The preview images simulate monochrome OG and 16-gray TRMNL X output. They use the actual Liquid layouts and a snapshot of the official TRMNL Framework. Pillow supplies local Floyd–Steinberg photo dithering for OG; TRMNL's hosted image pipeline may produce a different texture. These are not photographs of a physical device or authenticated cloud renders.
 
 All four layouts use the standard TRMNL `title_bar`, as a direct sibling after the `layout`. It shows Unseen and the plate number, with no custom title-bar CSS. Photo credit and licence remain in a separate attribution line, including when captions are off. All four layouts are included. OG full view uses a narrow caption panel beside the photograph; X full view uses a caption below it. The complete field of view is retained, including original scale bars. In portrait and narrow mashups, letterboxing is deliberate. Original capture magnification is labelled as capture magnification; it is not the magnification of the resized display image.
 
@@ -16,7 +16,7 @@ Unseen was submitted for public review on 18 October 2026 and is not published y
 
 1. Leave **Public collection URL** at `https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main`.
 2. Choose **Daily** for one picture per local calendar day, or **Every refresh** for a new plate at each plugin data refresh.
-3. Choose whether to show the subject caption. Photo credit and licence always remain visible.
+3. Use the **Show subject caption** checkbox to show or hide the subject caption. Photo credit and licence always remain visible.
 4. Save and add Unseen to your device playlist. **Force Refresh** requests a new data render; replaying a cached playlist screen does not advance the plate. Hourly refresh is the default. Daily mode changes at the first successful refresh after local midnight.
 
 For development or a manual private-plugin installation:
@@ -76,3 +76,11 @@ The standard title bar was verified in the authenticated TRMNL editor on 18 Octo
 The 25 rotation/payload tests pass. The title-bar update also has 46 local layout checks, including long credits, captions off and setup states; the earlier 406 collection checks remain recorded separately. Live Every refresh advancement from plate 003 to 004 is documented in `data/live-validation.json`.
 
 The monochrome 512 × 512 diatom icon and editable SVG are in `assets/branding/`. The marketplace copy and outstanding submission steps are recorded in `RELEASE.md`. Public submission completed on 18 October 2026. AI Chef returned two suggestions and one nitpick, with no critical findings. The recipe is awaiting human review; see `data/submission.json`.
+
+## November review update
+
+Mario's review changes are implemented in v0.2.4. **Show subject caption** is now a boolean field with `default: true`. Serverless accepts both native booleans and the `"true"` / `"false"` strings sent by TRMNL, and continues to honor legacy `"yes"` / `"no"` selections during migration. False disables only the subject caption; source credit and licence remain visible.
+
+Subjects use `title lg:title--large`. Method/date lines and credits use `description lg:description--large`. There are no custom font families, sizes, weights or line heights. Framework utilities also supply spacing, colors, borders, flex positioning and image containment. Nine scoped CSS rules remain for image shrink/overflow geometry, word wrapping, compact-view visibility and the existing OG full-view side panel. The plate number now appears only in the standard title bar.
+
+The local renderer now reproduces the hosted `screen--1x` setting and actual mashup wrappers. Earlier local geometry reports omitted those wrappers; use the v0.2.4 Framework report and live checks for current geometry evidence.

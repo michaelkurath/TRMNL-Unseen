@@ -43,3 +43,13 @@ The GitHub import reset this instance's picture mode to Daily. Every refresh was
 - Check readability on a physical device; hosted previews cannot prove physical e-paper output.
 
 See `data/submission.json` and `previews/submitted-review.jpg` for the submission record.
+
+## Follow-up for Mario — 4 November 2026
+
+- Converted Show subject caption to a boolean with a true default; verified native and string true/false, plus legacy yes/no migration.
+- Replaced custom typography with the requested Framework title/description classes and responsive size variants. Removed all font-family, font-size, font-weight and line-height declarations from plugin markup.
+- Replaced custom spacing, colors, borders, flex positioning and object fitting with Framework utilities. Nine CSS rules remain for photograph geometry and compact-view visibility.
+- Removed the duplicate plate number from the caption; the standard title bar retains it.
+- Corrected the local render harness to use actual mashup wrappers and screen--1x, matching the hosted previews. Older full-size compact simulations are historical evidence only.
+
+This follow-up has not been sent to Mario automatically.

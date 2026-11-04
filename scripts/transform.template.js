@@ -32,7 +32,8 @@ function run(input = {}) {
   const previousIndex = CATALOGUE.findIndex(entry => entry.id === input?.trmnl?.state?.unseen_last_plate_id);
   const index = mode === 'every_refresh' && previousIndex >= 0 ? (previousIndex + 1) % CATALOGUE.length : dailyIndex;
   const item = CATALOGUE[index];
-  const caption = ![false, 'false', 'no', 'off', '0'].includes(fields.show_caption);
+  // Boolean fields arrive as true/false strings; retain legacy No during migration.
+  const caption = ![false, 'false', 'no', 'off', '0', 0].includes(fields.show_caption);
   return {
     selected_entry: {...item, image_url: validRoot ? `${root}/${item.local_image}` : ''},
     date: day, display_date: day.slice(8,10) + '.' + day.slice(5,7) + '.' + day.slice(0,4),

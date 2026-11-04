@@ -43,4 +43,11 @@ for layout in ('full','half_horizontal','half_vertical','quadrant'):
 assert '<div class="title_bar">' in (ROOT / 'src/shared.liquid').read_text()
 assert 'image-dither' in (ROOT / 'src/shared.liquid').read_text()
 assert len(json.loads((ROOT / 'data/ping.json').read_text())) > 0
+
+shared = (ROOT / 'src/shared.liquid').read_text()
+assert not re.search(r'font-(?:family|size|weight)\s*:|line-height\s*:', shared), 'Use Framework typography classes'
+assert 'title lg:title--large' in shared
+assert 'description lg:description--large' in shared
+settings = (ROOT / 'src/settings.yml').read_text()
+assert '- keyname: show_caption\n  field_type: boolean' in settings
 print(f'PASS: {len(catalogue)} PNGs, image hashes, source/credit records, generated transform and four layouts.')

@@ -17,6 +17,12 @@ check('dates before epoch select a valid subject',()=>assert.ok(run(input('2025-
 check('Unix seconds and milliseconds agree',()=>assert.equal(run(input(1792238400)).date,run(input(1792238400000)).date));
 check('invalid timestamp is rejected',()=>assert.throws(()=>run(input('not-a-date'))));
 check('caption off preserves attribution in output',()=>{const r=run(input('2026-10-17T12:00:00Z','UTC',{show_caption:'no'}));assert.equal(r.show_caption,false);assert.ok(r.selected_entry.credit);assert.ok(r.selected_entry.license_url);});
+check('boolean caption values and legacy selections preserve credits',()=>{
+ for(const [value,expected] of [[true,true],['true',true],[false,false],['false',false],['yes',true],['no',false],[undefined,true]]){
+  const r=run(input('2026-10-17T12:00:00Z','UTC',{show_caption:value}));
+  assert.equal(r.show_caption,expected,String(value));assert.ok(r.selected_entry.credit);assert.ok(r.selected_entry.license_url);
+ }
+});
 check('missing or unsafe public URL enters setup state',()=>{for(const value of ['','javascript:alert(1)','http://example.org'])assert.equal(run(input('2026-10-17T12:00:00Z','UTC',{assets_base_url:value})).setup_required,true);});
 check('repository image source is the default when no custom field is supplied',()=>{const r=run({trmnl:{system:{timestamp_utc:'2026-10-17T12:00:00Z'},user:{time_zone_iana:'UTC'}}});assert.equal(r.setup_required,false);assert.equal(r.selected_entry.image_url,'https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main/assets/plates/butterfly-wing.png');});
 check('all emitted payloads remain below 5 KB',()=>{for(let n=0;n<CATALOGUE.length;n++){const r=run(input(new Date(Date.UTC(2026,9,17+n,12)).toISOString()));assert.ok(Buffer.byteLength(JSON.stringify(r))<5000);assert.equal(r.selected_entry.image_url,base+'/'+r.selected_entry.local_image);}});

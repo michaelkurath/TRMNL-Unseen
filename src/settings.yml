@@ -35,13 +35,10 @@ custom_fields:
   - Every refresh: every_refresh
   default: daily
 - keyname: show_caption
-  field_type: select
+  field_type: boolean
   name: Show subject caption
   description: Image credit remains visible in both modes.
-  options:
-  - 'Yes': 'yes'
-  - 'No': 'no'
-  default: 'yes'
+  default: true
 name: Unseen
 description: Discover the microscopic world
 refresh_interval: 60
