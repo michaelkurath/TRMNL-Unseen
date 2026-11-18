@@ -35,7 +35,11 @@ function run(input = {}) {
   // Boolean fields arrive as true/false strings; retain legacy No during migration.
   const caption = ![false, 'false', 'no', 'off', '0', 0].includes(fields.show_caption);
   return {
-    selected_entry: {...item, image_url: validRoot ? `${root}/${item.local_image}` : ''},
+    selected_entry: {
+      ...item,
+      image_url: validRoot ? `${root}/${item.local_image}` : '',
+      ...(validRoot && item.frame_image ? {frame_image_url: `${root}/${item.frame_image}`} : {})
+    },
     date: day, display_date: day.slice(8,10) + '.' + day.slice(5,7) + '.' + day.slice(0,4),
     plate_number: String(index + 1).padStart(3,'0'), total_plates: CATALOGUE.length,
     show_caption: caption, setup_required: !validRoot, picture_mode: mode,

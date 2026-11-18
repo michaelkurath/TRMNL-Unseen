@@ -75,10 +75,11 @@
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Paper_sheet_500x_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Paper_sheet_500x_-_SEM_MUSE.tif/lossy-page1-1920px-Paper_sheet_500x_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "local_image": "assets/plates/paper.png",
+      "frame_image": "assets/frame/paper.jpg",
       "width": 2048,
       "height": 1536,
       "source_sha256": "d70658201ec6804455bd5a9a1924efcec5ac4916718b106eede84df246c0a885",
-      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.",
       "source_description": "Un foglio di carta al microscopio elettronico a scansione."
     },
     {
@@ -115,10 +116,11 @@
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Copper_crystal_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Copper_crystal_-_SEM_MUSE.tif/lossy-page1-1920px-Copper_crystal_-_SEM_MUSE.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "local_image": "assets/plates/copper.png",
+      "frame_image": "assets/frame/copper.jpg",
       "width": 3072,
       "height": 2304,
       "source_sha256": "183fdae614844eaff8fcd1ba14cf7a42d5c174a4c968e5daa16ef897cf193f81",
-      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.",
       "source_description": "Cristallo_di_rame al microscopio elettronico a scansione."
     },
     {
@@ -835,10 +837,11 @@
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Surirella_spiralis_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Surirella_spiralis_-_SEM_MUSE.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "local_image": "assets/plates/surirella.png",
+      "frame_image": "assets/frame/surirella.jpg",
       "width": 1024,
       "height": 768,
       "source_sha256": "733ee1cebc07f5f820a0b47815274a302134c9e147e5f4647207779a0696266b",
-      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.",
+      "changes": "Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.",
       "source_description": "Alga diatomea Surirella_spiralis al microscopio elettronico a scansione."
     },
     {

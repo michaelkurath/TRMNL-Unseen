@@ -1,3 +1,10 @@
+{% if selected_entry.frame_image_url %}
+<style>
+  .unseen__frame-only,
+  .trmnl .screen--frame .unseen__classic-only { display: none; }
+  .trmnl .screen--frame .unseen__frame-only { display: inline; }
+</style>
+{% endif %}
 {% capture unseen_setup %}
 <div class="unseen__setup flex flex--col flex--top flex--stretch-x gap--small w--full h--full p--6">
   <span class="title lg:title--large">Unseen</span>
@@ -6,7 +13,10 @@
 {% endcapture %}
 {% capture unseen_image %}
 <div class="unseen__image grow relative bg--black w--full">
-  <img class="image image-dither image--contain absolute top--0 left--0 w--full h--full" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph">
+  <img class="image image-dither{% if selected_entry.frame_image_url %} unseen__classic-only{% endif %} image--contain absolute top--0 left--0 w--full h--full" src="{{ selected_entry.image_url | escape }}" alt="{{ selected_entry.title | escape }} — scanning electron micrograph">
+  {% if selected_entry.frame_image_url %}
+  <img class="image image-dither image--contain absolute top--0 left--0 w--full h--full unseen__frame-only" src="{{ selected_entry.frame_image_url | escape }}" alt="{{ selected_entry.title | escape }} — false-colour scanning electron micrograph">
+  {% endif %}
 </div>
 {% endcapture %}
 {% capture unseen_subject %}
@@ -14,12 +24,12 @@
 {% if selected_entry.magnification != blank %}<span class="description lg:description--large">{{ selected_entry.magnification | escape }} capture</span>{% endif %}
 {% endcapture %}
 {% capture unseen_details %}
-<div class="description lg:description--large">Scanning electron micrograph</div>
-<div class="description lg:description--large">{{ display_date }}</div>
+<div class="description lg:description--large{% if selected_entry.frame_image_url %} unseen__classic-only{% endif %}">Scanning electron micrograph</div>
+<div class="description lg:description--large{% if selected_entry.frame_image_url %} unseen__classic-only{% endif %}">{{ display_date }}</div>
 {% endcapture %}
 {% capture unseen_credit %}
 <div class="unseen__credit shrink-0 px--3 py--2 lg:px--4 border--h-10">
-  <span class="unseen__rights description lg:description--large"><a class="text--black" href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a class="text--black" href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · adapted</span>
+  <span class="unseen__rights description lg:description--large"><a class="text--black" href="{{ selected_entry.source_page | escape }}">{{ selected_entry.credit | escape }}</a> · <a class="text--black" href="{{ selected_entry.license_url | escape }}">{{ selected_entry.license | escape }}</a> · <span{% if selected_entry.frame_image_url %} class="unseen__classic-only"{% endif %}>adapted</span>{% if selected_entry.frame_image_url %}<span class="unseen__frame-only">False-colour SEM</span>{% endif %}</span>
 </div>
 {% endcapture %}
 {% capture unseen_titlebar %}

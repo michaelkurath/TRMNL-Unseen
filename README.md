@@ -92,3 +92,30 @@ All custom CSS has been removed from the plugin source: no `<style>` blocks, inl
 The former OG side panel is replaced by the same vertical composition used on X. Shared captures hold the image, subject, details, credit and title bar. Full and half-vertical layouts include the method/date lines; half-horizontal and quadrant layouts omit those lines in Liquid to leave more room for the photo. Credits remain visible with the caption checkbox off. No extra view wrapper is created by the plugin.
 
 The v0.2.4 review above is historical; its nine custom CSS rules have all been removed. Current measurements are in `previews/framework-only-layout-report.json`.
+
+## Frame colour pilot
+
+Three existing plates have a false-colour edition: Surirella diatom, copper
+crystal and a sheet of paper. Frame selects the colour edition automatically in
+full, half-horizontal, half-vertical and quadrant views. The rest of the
+collection uses its original grayscale assets on Frame. OG and X always use
+the original assets. Daily and Every refresh still use the same 60-plate order.
+
+The image fits the view in either orientation and retains the full field of
+view and scale bars. Frame shows the source credit, licence and a
+“False-colour SEM” label even when the subject caption is off. The colour
+maps encode grayscale intensity, with no interpretation of the specimen's
+visible colours. See [image credits](CREDITS.md) for derivative licences.
+
+For a private test, copy the pilot branch's Shared markup and Serverless code
+into a test plugin. Set **Public collection URL** to
+`https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/frame-colour-pilot`
+and use a Frame preview. For a local check of all four layouts in both Frame
+orientations, run:
+
+```sh
+RENDER_PROFILE=frame,frame-portrait RENDER_SUBJECT=surirella,copper,paper,butterfly-wing \
+  RENDER_CHECK_ONLY=1 RENDER_REPORT=previews/frame-layout-report.json npm run render
+```
+
+Regenerate the pilot JPEGs with `python scripts/colourize_frame.py`.
