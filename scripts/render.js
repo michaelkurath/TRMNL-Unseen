@@ -6,9 +6,13 @@ const {run}=require('../src/transform.js');
 const ROOT=path.resolve(__dirname,'..');
 const engine=new Liquid({strictVariables:false,strictFilters:true});
 const profiles=[{id:'og',classes:'screen--og screen--md screen--1bit',w:800,h:480,dpr:1,bits:1},{id:'x',classes:'screen--v2 screen--lg screen--density-2x screen--4bit',w:1040,h:780,dpr:1.8,bits:4},{id:'x-portrait',classes:'screen--v2 screen--lg screen--density-2x screen--4bit screen--portrait',w:780,h:1040,dpr:1.8,bits:4}];
+const frameProfiles=[
+ {id:'frame',classes:'screen--frame screen--lg screen--color-6a',w:2560,h:1440,dpr:1},
+ {id:'frame-portrait',classes:'screen--frame screen--lg screen--color-6a screen--portrait',w:1440,h:2560,dpr:1}
+];
 const layouts=['full','half_horizontal','half_vertical','quadrant'];
 async function main(){
- const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.split('?')[0]);if(p.startsWith('/fonts/'))p='/vendor'+p;const f=path.resolve(ROOT,'.'+p);if(!f.startsWith(ROOT+path.sep)){res.writeHead(403);return res.end();}try{const data=fs.readFileSync(f);res.setHeader('Cache-Control','public, max-age=3600');res.setHeader('Content-Type',f.endsWith('.css')?'text/css':f.endsWith('.js')?'application/javascript':f.endsWith('.png')?'image/png':f.endsWith('.woff2')?'font/woff2':'application/octet-stream');res.end(data);}catch(_){res.writeHead(404);res.end();}});
+ const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.split('?')[0]);if(p.startsWith('/fonts/'))p='/vendor'+p;const f=path.resolve(ROOT,'.'+p);if(!f.startsWith(ROOT+path.sep)){res.writeHead(403);return res.end();}try{const data=fs.readFileSync(f);res.setHeader('Cache-Control','public, max-age=3600');res.setHeader('Content-Type',f.endsWith('.css')?'text/css':f.endsWith('.js')?'application/javascript':f.endsWith('.png')?'image/png':f.endsWith('.jpg')?'image/jpeg':f.endsWith('.woff2')?'font/woff2':'application/octet-stream');res.end(data);}catch(_){res.writeHead(404);res.end();}});
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const origin=`http://127.0.0.1:${server.address().port}`;
  const executable=process.env.CHROMIUM_PATH;
@@ -18,9 +22,14 @@ async function main(){
  const entries=require('../data/catalogue.json').entries;
  for(const p of profiles)for(let n=0;n<entries.length;n++)jobs.push({p,n,layout:'full',caption:'true'});
  for(const layout of layouts.slice(1))for(let n=0;n<entries.length;n++)jobs.push({p:profiles[0],n,layout,caption:'true'});
+ // Exercise both renditions, including a non-pilot plate and captions off.
+ entries.forEach((entry,n)=>{
+  if(!entry.frame_image&&n!==0)return;
+  for(const p of [...frameProfiles,...profiles])for(const layout of layouts)for(const caption of ['true','false'])
+   if(!jobs.some(j=>j.p===p&&j.n===n&&j.layout===layout&&j.caption===caption&&!j.setup))jobs.push({p,n,layout,caption});
+ });
  const longest=entries.map((e,n)=>({n,length:e.credit.length+e.title.length})).sort((a,b)=>b.length-a.length).slice(0,5);
  for(const p of profiles.slice(1))for(const layout of layouts.slice(1))for(const {n} of longest)jobs.push({p,n,layout,caption:'true'});
- for(const p of profiles.slice(0,2))for(const layout of layouts)jobs.push({p,n:0,layout,caption:'false'});
  for(const p of profiles.slice(0,2))for(const layout of layouts)jobs.push({p,n:0,layout,caption:'true',setup:true});
  const profileFilter=process.env.RENDER_PROFILE,layoutFilter=process.env.RENDER_LAYOUT,subjectFilter=process.env.RENDER_SUBJECT;
  const subjectIds=require('../data/catalogue.json').entries.map(e=>e.id);
@@ -51,10 +60,20 @@ async function main(){
     if(!measurement.imageBox||measurement.imageBox.height<=0)throw new Error('Photo has no visible area');
     if(await page.locator('.unseen__caption').count()!==(caption==='true'?1:0))throw new Error('Caption boolean did not control visibility');
     if(!await page.locator('.unseen__rights').isVisible())throw new Error('Photo attribution is hidden');
+    const isFrame=frameProfiles.includes(p);
+    const colour=Boolean(isFrame&&data.selected_entry.frame_image_url);
+    const visiblePhoto=page.locator('.unseen__image img:visible');
+    const expectedSource=colour?data.selected_entry.frame_image_url:data.selected_entry.image_url;
+    if(await visiblePhoto.count()!==1||await visiblePhoto.getAttribute('src')!==expectedSource)
+     throw new Error('Incorrect image rendition for '+p.id);
+    const falseColourLabel=page.getByText('False-colour SEM',{exact:true});
+    if(await falseColourLabel.isVisible()!==colour)throw new Error('False-colour label does not match rendition');
    }
    const filename=`${p.id}-${layout}-${j.setup?'setup':data.selected_entry.id}${caption==='false'?'-image-only':''}`;
-   await page.locator('.view').screenshot({path:path.join(ROOT,'previews',filename+'-raw.png')});
-   fs.writeFileSync(path.join(ROOT,'previews',filename+'.html'),html.replaceAll(origin,'..'));
+   if (!process.env.RENDER_CHECK_ONLY) {
+    await page.locator('.view').screenshot({path:path.join(ROOT,'previews',filename+'-raw.png')});
+    fs.writeFileSync(path.join(ROOT,'previews',filename+'.html'),html.replaceAll(origin,'..'));
+   }
    report.push({filename,profile:p.id,bits:p.bits,dpr:p.dpr,layout,subject:data.selected_entry.id,caption,setup:!!j.setup,...measurement});
    if(report.length%20===0)console.log(`Rendered ${report.length}/${filteredJobs.length}`);
   }

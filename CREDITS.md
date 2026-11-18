@@ -33,7 +33,7 @@ Prepared PNGs preserve the full microscope field of view and scale bars. They ar
 - Source: https://commons.wikimedia.org/wiki/File:Paper_sheet_500x_-_SEM_MUSE.tif
 - Author: Nicola Angeli / MUSE
 - Licence: CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0
-- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.
+- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.
 - Magnification: 500×. File-label magnifications describe the original capture; resizing changes displayed magnification.
 
 ## Pollen
@@ -49,7 +49,7 @@ Prepared PNGs preserve the full microscope field of view and scale bars. They ar
 - Source: https://commons.wikimedia.org/wiki/File:Copper_crystal_-_SEM_MUSE.tif
 - Author: Nicola Angeli / MUSE
 - Licence: CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0
-- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.
+- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.
 - Magnification: Not stated; no value inferred. File-label magnifications describe the original capture; resizing changes displayed magnification.
 
 ## Cork
@@ -337,7 +337,7 @@ Prepared PNGs preserve the full microscope field of view and scale bars. They ar
 - Source: https://commons.wikimedia.org/wiki/File:Surirella_spiralis_-_SEM_MUSE.tif
 - Author: Nicola Angeli / MUSE
 - Licence: CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0
-- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette.
+- Changes: Converted to grayscale PNG; full field of view preserved. Device previews resize and dither to their display palette. Frame edition adds a luminance-based false-colour treatment to the grayscale PNG, preserving the complete field of view and original scale bars.
 - Magnification: Not stated; no value inferred. File-label magnifications describe the original capture; resizing changes displayed magnification.
 
 ## Nickel corrosion

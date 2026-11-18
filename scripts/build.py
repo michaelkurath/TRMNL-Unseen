@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 catalogue=json.loads((ROOT/'data/catalogue.json').read_text())
 entries=catalogue['entries']
-compact=[{k:e[k] for k in ('id','title','theme','magnification','credit','license','license_url','source_page','local_image')} for e in entries]
+compact=[{k:e[k] for k in ('id','title','theme','magnification','credit','license','license_url','source_page','local_image','frame_image') if k in e} for e in entries]
 template=(ROOT/'scripts/transform.template.js').read_text()
 (ROOT/'src/transform.js').write_text(template.replace('__CATALOGUE__',json.dumps(compact,ensure_ascii=False,separators=(',',':'))))
 for layout in ('full','half_horizontal','half_vertical','quadrant'):

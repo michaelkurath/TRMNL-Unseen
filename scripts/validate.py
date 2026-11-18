@@ -33,8 +33,8 @@ for entry in catalogue:
         assert image.size == (entry['width'], entry['height'])
     assert len(entry['source_sha256']) == 64
     assert entry['source_page'] in (ROOT / 'CREDITS.md').read_text()
-keys = ('id','title','theme','magnification','credit','license','license_url','source_page','local_image')
-compact = [{k:e[k] for k in keys} for e in catalogue]
+keys = ('id','title','theme','magnification','credit','license','license_url','source_page','local_image','frame_image')
+compact = [{k:e[k] for k in keys if k in e} for e in catalogue]
 expected = (ROOT / 'scripts/transform.template.js').read_text().replace('__CATALOGUE__', json.dumps(compact, ensure_ascii=False, separators=(',', ':')))
 assert (ROOT / 'src/transform.js').read_text() == expected, 'Run python scripts/build.py'
 for layout in ('full','half_horizontal','half_vertical','quadrant'):
@@ -47,7 +47,18 @@ assert 'image-dither' in (ROOT / 'src/shared.liquid').read_text()
 assert len(json.loads((ROOT / 'data/ping.json').read_text())) > 0
 
 shared = (ROOT / 'src/shared.liquid').read_text()
-assert '<style' not in shared.lower() and not re.search(r'\bstyle\s*=', shared, re.I), 'Use Framework utilities only'
+# Shared may use scoped display toggles to select the asset for the render target.
+for css in re.findall(r'<style>(.*?)</style>', shared, re.S):
+    for rule in re.findall(r'\{([^}]+)\}', css):
+        assert re.fullmatch(r'\s*display: (?:none|inline);\s*', rule)
+assert not re.search(r'\bstyle\s*=', shared, re.I), 'Use Framework utilities for layout'
+for entry in catalogue:
+    if 'frame_image' in entry:
+        with Image.open(ROOT / entry['frame_image']) as image:
+            image.load()
+            assert (image.format, image.mode) == ('JPEG', 'RGB')
+            assert max(image.size) <= 2560
+            assert abs(image.width * entry['height'] / entry['width'] - image.height) <= 1
 assert not re.search(r'font-(?:family|size|weight)\s*:|line-height\s*:', shared), 'Use Framework typography classes'
 assert 'title lg:title--large' in shared
 assert 'description lg:description--large' in shared
