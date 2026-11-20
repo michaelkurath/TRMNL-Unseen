@@ -31,18 +31,21 @@ function run(input = {}) {
   const mode = fields.picture_mode === 'every_refresh' ? 'every_refresh' : 'daily';
   const previousIndex = CATALOGUE.findIndex(entry => entry.id === input?.trmnl?.state?.unseen_last_plate_id);
   const index = mode === 'every_refresh' && previousIndex >= 0 ? (previousIndex + 1) % CATALOGUE.length : dailyIndex;
-  const item = CATALOGUE[index];
+  // The recipe master uses this source spelling only while capturing its showcase.
+  const marketplacePreview = fields.assets_base_url === 'https://RAW.githubusercontent.com/michaelkurath/TRMNL-Unseen/main';
+  const renderIndex = marketplacePreview ? CATALOGUE.findIndex(entry => entry.id === 'butterfly-wing') : index;
+  const item = CATALOGUE[renderIndex];
   // Boolean fields arrive as true/false strings; retain legacy No during migration.
   const caption = ![false, 'false', 'no', 'off', '0', 0].includes(fields.show_caption);
   return {
     selected_entry: {...item, image_url: validRoot ? `${root}/${item.local_image}` : ''},
     date: day, display_date: day.slice(8,10) + '.' + day.slice(5,7) + '.' + day.slice(0,4),
-    plate_number: String(index + 1).padStart(3,'0'), total_plates: CATALOGUE.length,
+    plate_number: String(renderIndex + 1).padStart(3,'0'), total_plates: CATALOGUE.length,
     show_caption: caption, setup_required: !validRoot, picture_mode: mode,
     notice: mode === 'every_refresh'
       ? `${CATALOGUE.length} plates, advancing on every plugin refresh.`
       : `${CATALOGUE.length} plates, repeating after ${CATALOGUE.length} local calendar days.`,
-    ...(validRoot ? {trmnl_state: {unseen_last_plate_id: item.id}} : {})
+    ...(validRoot && !marketplacePreview ? {trmnl_state: {unseen_last_plate_id: item.id}} : {})
   };
 }
 if (typeof module !== 'undefined') module.exports = {run, localDate, timestamp, CATALOGUE};
