@@ -19,17 +19,11 @@ custom_fields:
   name: About Unseen
   category: images,education
   github_url: https://github.com/michaelkurath/TRMNL-Unseen
-  description: Discover 60 real scanning electron micrographs of familiar materials, natural structures and tiny engineered worlds. Choose one picture per local calendar day or a new picture on every plugin refresh.<br/><br/> No API key or separate hosting is needed. Leave Public collection URL at its default, choose a picture mode, then save. Replaying a cached playlist screen does not advance the collection. Photo credits remain visible with captions off.<br/><br/> Photography from MUSE and University of Tartu contributors; individual CC BY and CC BY-SA credits appear on every plate. <a href="https://github.com/michaelkurath/TRMNL-Unseen#readme">Setup and source credits</a> · <a href="https://github.com/michaelkurath/TRMNL-Unseen/issues">Support and feedback</a>.
-- keyname: assets_base_url
-  field_type: string
-  name: Public collection URL
-  description: Public image source. The default uses this plugin's GitHub repository; no separate hosting account is required.
-  default: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
-  placeholder: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
+  description: See a butterfly wing, human hair, or a sheet of paper under an electron microscope. Unseen brings 60 real micrographs to your TRMNL, one specimen at a time. Look closely at the structures behind familiar things, from the ridges of a wing to the fibres in a sheet of paper.<br/><br/>Install and choose Daily or Every refresh. Daily is the default. You can show or hide the subject caption. The original scale bar, when present, stays with the image, and the photo credit and licence are always shown.<br/><br/>Photographs by MUSE and University of Tartu contributors. <a href="https://github.com/michaelkurath/TRMNL-Unseen#readme">Setup and source credits</a> · <a href="https://github.com/michaelkurath/TRMNL-Unseen/issues">Support and feedback</a>.
 - keyname: picture_mode
   field_type: select
   name: Picture change mode
-  description: Daily keeps the same picture for the local calendar day. Every refresh advances to the next picture on each scheduled plugin refresh or Force Refresh.
+  description: Daily shows one specimen per local calendar day. Every refresh advances on each plugin data refresh.
   options:
   - Daily: daily
   - Every refresh: every_refresh
@@ -39,6 +33,12 @@ custom_fields:
   name: Show subject caption
   description: Image credit remains visible in both modes.
   default: true
+- keyname: assets_base_url
+  field_type: string
+  name: Public collection URL (advanced)
+  description: Leave the default to use the included collection. Change this only for a separately hosted copy.
+  default: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
+  placeholder: https://raw.githubusercontent.com/michaelkurath/TRMNL-Unseen/main
 name: Unseen
-description: Discover the microscopic world
+description: One real micrograph every day
 refresh_interval: 60
